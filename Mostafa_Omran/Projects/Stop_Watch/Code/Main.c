@@ -124,23 +124,13 @@ int main()
 									softwareDelayMs(1);
 									//_delay_ms(5);
 									SSD_Disable(ptr4);
-
-
-
 								}
-
 							}
 						}
-
 					}
-
 				}
-
 			}
-
 		}
-
-
 	}
 }
 
