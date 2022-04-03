@@ -20,8 +20,8 @@
 
 //Selection of Port Used to Control LCD
 //#define CLCD_ControlPort	DIO_PORTA
-#define CLCD_ControlPort	DIO_PORTB
-//#define CLCD_ControlPort	DIO_PORTC
+//#define CLCD_ControlPort	DIO_PORTB
+#define CLCD_ControlPort	DIO_PORTC
 //#define CLCD_ControlPort	DIO_PORTD
 
 //RegisterSelect pin selections

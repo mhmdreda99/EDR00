@@ -9,13 +9,9 @@
 void main(void)
 {
 
-	CLCD_init();
 	CLCD_SendData('S');
 	CLCD_SendData('E');
 	CLCD_SendData('K');
 	CLCD_SendData('O');
 
-	while(1)
-	{
-	}
 }
