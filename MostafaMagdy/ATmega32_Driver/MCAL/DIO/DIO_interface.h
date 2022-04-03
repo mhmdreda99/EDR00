@@ -21,6 +21,9 @@
 #define MAX_PinNum 	7
 #define PORT_HIGH	0xff
 #define PORT_LOW	0
+#define PORT_OUTPUT	0xff
+#define PORT_INPUT	0
+
 #define NULL 0
 typedef enum
 	{

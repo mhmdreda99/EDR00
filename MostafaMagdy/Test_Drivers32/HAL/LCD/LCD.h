@@ -12,6 +12,12 @@
 #include "../../LIB/STD_Types.h"
 #include "../../MCAL/DIO/DIO_interface.h"
 
+//bits for accessing CGRAM&DDRAM
+#define	Set_Bit7	128
+#define Set_Bit6	64
+
+//Location in DDRAM of CLCD Controller
+#define FirstLoc_SecondLine							0x40
 
 //Commands
 #define CLCD_CLEAR			0x01		//Clear the screen
@@ -39,10 +45,10 @@
 #define LCD_CLEAR_SCREEN							(0x01)
 #define LCD_ENTRY_MODE								(0x06)
 
-
-
 void CLCD_init(void);
 void CLCD_SendCommand(u8 command);
 void CLCD_SendData(u8 Data);
-
+void CLCD_SendWord(const u8 *Arr_PTR);
+STD_Return CLCD_GoToXY(u8 X_Position,u8 Y_Position);
+void CLCD_SendSpecialChar(u8 *Pattern,u8 BlockNumber,u8 X_Position,u8 Y_Position);
 #endif /* HAL_LCD_LCD_H_ */

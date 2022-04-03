@@ -9,9 +9,9 @@
 void main(void)
 {
 
-	CLCD_SendData('S');
-	CLCD_SendData('E');
-	CLCD_SendData('K');
-	CLCD_SendData('O');
-
+	CLCD_init();
+	CLCD_GoToXY(0,3);
+	CLCD_SendData('R');
+	CLCD_GoToXY(1,5);
+		CLCD_SendData('M');
 }

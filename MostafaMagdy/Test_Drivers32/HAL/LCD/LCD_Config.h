@@ -9,7 +9,7 @@
 #define HAL_LCD_LCD_CONFIG_H_
 
 //LCD mode selection
-#define CLCD_4_BitMode	//4 Bit Mode
+//#define CLCD_4_BitMode	//4 Bit Mode
 #define CLCD_8_BitMode	//8 Bit Mode
 
 //Selection of Port Used to display LCD Data/ Send Commands
@@ -54,11 +54,11 @@
 //#define CLCD_E_PIN	1
 //#define CLCD_E_PIN	0
 
-//CLCD Init_FunctionSet
+//CLCD Init_FunctionSet for 8_BitMode
 //#define CLCD_OneLine_5x8Size         0x30
 //#define CLCD_OneLine_5x11Size        0x34
-#define CLCD_TwoLines_5x8Size        0x38
-//#define CLCD_TwoLines_5x11Size       0x3C
+//#define CLCD_TwoLines_5x8Size        0x38
+#define CLCD_TwoLines_5x11Size       0x3C
 
 
 #endif /* HAL_LCD_LCD_CONFIG_H_ */

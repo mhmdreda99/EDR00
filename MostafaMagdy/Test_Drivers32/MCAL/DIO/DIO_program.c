@@ -101,76 +101,28 @@ STD_Return DIO_SetPinDirection(DIO_Ports PORT, u8 PIN, DIO_Direction Direction)
 	return E_NOK;
 	}
 
-STD_Return DIO_SetPortDirection(DIO_Ports PORT,DIO_Direction Direction)
-	{
-	// check for safety
-	if(((PORT)!=(DIO_PORTA))&&((PORT)!=(DIO_PORTB))&&((PORT)!=(DIO_PORTC))&&((PORT)!=(DIO_PORTD)))
-				{
-					return E_OK;
-				}
-			else
-				{
+STD_Return DIO_SetPortDirection(DIO_Ports PORT,u8 Direction)
+{
 					switch(PORT)
 						{
 							case DIO_PORTA:
-								switch(Direction)
-									{
-										case DIO_INPUT:
-											DDRA= PORT_LOW;
-											break;
-										case DIO_OUTPUT:
-											DDRA=PORT_HIGH;
-											break;
-										default:
-											return E_OK;
-									}
+								DDRA=Direction;
 							break;
 							case DIO_PORTB:
-								switch(Direction)
-									{
-								case DIO_INPUT:
-										DDRB = PORT_LOW;
-										break;
-									case DIO_OUTPUT:
-										DDRB=PORT_HIGH;
-										break;
-									default:
-										return E_OK;
-									}
+								DDRB=Direction;
 							break;
 							case DIO_PORTC:
-								switch(Direction)
-									{
-										case DIO_INPUT:
-											DDRC=PORT_LOW;
-											break;
-										case DIO_OUTPUT:
-											DDRC=PORT_HIGH;
-											break;
-										default:
-											return E_OK;
-									}
+								DDRC=Direction;
 							break;
 							case DIO_PORTD:
-								switch(Direction)
-									{
-										case DIO_INPUT:
-											DDRD=PORT_LOW;
-											break;
-										case DIO_OUTPUT:
-											DDRD=PORT_HIGH;
-											break;
-										default:
-											return E_OK;
-										}
-
+								DDRD=Direction;
 							break;
 							default:
 							return E_OK;
+
 						}
-				}
 	return E_NOK;
-	}
+}
 
 STD_Return DIO_SetPinValue(DIO_Ports PORT,u8 PIN,DIO_State State)
 	{
@@ -241,77 +193,29 @@ STD_Return DIO_SetPinValue(DIO_Ports PORT,u8 PIN,DIO_State State)
 		return E_NOK;
 	}
 
-STD_Return DIO_SetPortValue(DIO_Ports PORT,DIO_State State)
+STD_Return DIO_SetPortValue(DIO_Ports PORT,u8 value)
 {
-	// check for safety
-	if(((PORT)!=(DIO_PORTA))&&((PORT)!=(DIO_PORTB))&&((PORT)!=(DIO_PORTC))&&((PORT)!=(DIO_PORTD)))
-				{
-					return E_OK;
-				}
-			else
-				{
 					switch(PORT)
 						{
 							case DIO_PORTA:
-								switch(State)
-									{
-										case DIO_LOW:
-											PORTA=PORT_LOW;
-											break;
-										case DIO_HIGH:
-											PORTA=PORT_HIGH;
-											break;
-										default:
-											return E_OK;
-									}
+								PORTA=value;
 							break;
 							case DIO_PORTB:
-								switch(State)
-									{
-										case DIO_LOW:
-											PORTB=PORT_LOW;
-											break;
-										case DIO_HIGH:
-											PORTB=PORT_HIGH;
-											break;
-										default:
-											return E_OK;
-									}
+								PORTB=value;
 							break;
 							case DIO_PORTC:
-								switch(State)
-									{
-										case DIO_LOW:
-											PORTC=PORT_LOW;
-											break;
-										case DIO_HIGH:
-											PORTC=PORT_HIGH;
-											break;
-										default:
-											return E_OK;
-									}
+								PORTC=value;
 							break;
 							case DIO_PORTD:
-								switch(State)
-									{
-										case DIO_LOW:
-											PORTD=PORT_LOW;
-											break;
-										case DIO_HIGH:
-											PORTD=PORT_HIGH;
-											break;
-										default:
-											return E_OK;
-										}
+								PORTD=value;
 
 							break;
 							default:
 							return E_OK;
 
 						}
-				}
 	return E_NOK;
-	}
+}
 
 STD_Return DIO_GetPinValue(DIO_Ports PORT,u8 PIN,DIO_State* State)
 	{
