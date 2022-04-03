@@ -97,3 +97,56 @@ void CLCD_voidInit(u8 Copy_u8Display,u8 Copy_u8Function)
 	CLCD_voidSendCommand(1);
 
 }
+
+void CLCD_voidSendString(const char* Copy_pcString)
+{
+	u8 Local_u8Counter=0;
+	while(Copy_pcString[Local_u8Counter]!='\0')
+	{
+		CLCD_voidSendData(Copy_pcString[Local_u8Counter]);
+		Local_u8Counter++;
+	}
+}
+
+void CLCD_voidGoToXY(u8 Copy_u8XPos,u8 Copy_u8YPos)
+{
+	/*Calculating the Address of the DDRAM by the coordinates X and Y*/
+	u8 Local_u8Address;
+	if(Copy_u8XPos==0)
+	{
+		/*Location is at the first line*/
+		Local_u8Address=Copy_u8YPos;
+	}
+	else if(Copy_u8XPos==1)
+	{
+		/*Location is at the second line*/
+		Local_u8Address=Copy_u8YPos+0x40;
+	}
+
+	/*Send the DDRAM Address to point on the location on the screen you want to write on it with setting bit 7*/
+	CLCD_voidSendCommand(Local_u8Address+128);
+}
+
+void CLCD_voidWriteSpecialCharacter(u8* Copy_pu8arr,u8 Copy_u8PatternNumber,u8 Copy_u8XPos,u8 Copy_u8YPos)
+{
+	u8 Local_u8Counter,Local_u8CGRAM_Address;
+
+	/*Calculating the Address of the CGRAM whose block is 8 bytes*/
+	Local_u8CGRAM_Address=Copy_u8PatternNumber*8;
+
+	/*Send the CGRAM Address to point on the first location then the address counter will continue to increment
+	 * 1 with setting bit 6 and clearing the bit 7*/
+		CLCD_voidSendCommand(Local_u8CGRAM_Address+64);
+
+	/*Loop to the start inserting the pattern into the CGRAM Byte by Byte*/
+		for(Local_u8Counter=0;Local_u8Counter<8;Local_u8Counter++)
+		{
+			CLCD_voidSendData(Copy_pu8arr[Local_u8Counter]);
+		}
+
+	/*go back to the DDRAM to display the pattern in the selected position*/
+		CLCD_voidGoToXY(Copy_u8XPos,Copy_u8YPos);
+
+	/*The DDRAM accessing the CGRAM by block to Displaying the pattern*/
+		CLCD_voidSendData(Copy_u8PatternNumber);
+}
