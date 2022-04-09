@@ -19,6 +19,7 @@ RM := rm -rf
 -include HAL/SevenSegment_Driver/subdir.mk
 -include HAL/LCD/subdir.mk
 -include HAL/.metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
+-include APP/StopWatch/subdir.mk
 -include subdir.mk
 -include objects.mk
 

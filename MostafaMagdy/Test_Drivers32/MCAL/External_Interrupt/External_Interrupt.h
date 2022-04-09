@@ -38,4 +38,5 @@ void CallBack_Int1(void (*Func_Ptr)(void));
 //Interrupt_No3
 STD_Return External_Int2(Int_Sense_Control SenseLevel);
 void CallBack_Int2(void (*Func_Ptr)(void));
+
 #endif /* EXTERNAL_INTERRUPT_H_ */

@@ -4,14 +4,21 @@
  *  Created on: Mar 28, 2022
  *      Author: Seko
  */
-#include "HAL/LCD/LCD.h"
-#include <util/delay.h>
+#include "APP/StopWatch/StopWatch.h"
+#include "util/delay.h"
 void main(void)
 {
+	u8 arr[]=
+	{
+			Zero,
+			One,
+			Two,
+			Three,
+			Four,
+			Five
+	};
+	while(1)
+	{
 
-	CLCD_init();
-	CLCD_GoToXY(0,3);
-	CLCD_SendData('R');
-	CLCD_GoToXY(1,5);
-		CLCD_SendData('M');
+	}
 }
