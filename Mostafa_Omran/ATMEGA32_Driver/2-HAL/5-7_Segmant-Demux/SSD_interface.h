@@ -24,10 +24,10 @@
 #define Digit_8             0b11111111
 #define Digit_9             0b11101111
 
-#define SSD1					0
-#define SSD2					1
-#define SSD3					2
-#define SSD4					3
+#define SSD_1					0
+#define SSD_2					1
+#define SSD_3					2
+#define SSD_4					3
 
 typedef struct
 {
@@ -38,10 +38,14 @@ typedef struct
 }SSD_t;
 
 
+
+
 u8 SSD_Set_Number(u8 Number, SSD_t*SSD);
-u8 SSD_Enable(SSD_t*SSD); 
+u8 SSD_Enable(SSD_t*SSD);
 u8 SSD_Disable(SSD_t*SSD);
 void SSD_voidInit(SSD_t*SSD);
-void SSD_Enable_BY_DEMUX(u8 SSD_Number);
 
+u8 SSD_DEMUX_Set_Number(u8 Number);
+void SSD_DEMUX_Init(SSD_t*SSD);
+void SSD_Switching_BY_DEMUX(u8 SSD_Number);
 #endif

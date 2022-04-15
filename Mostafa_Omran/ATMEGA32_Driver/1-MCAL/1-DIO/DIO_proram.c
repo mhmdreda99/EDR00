@@ -10,13 +10,30 @@
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
 
-#include "DIO_register.h"
-#include "DIO_interface.h"
-#include "DIO_private.h"
+
 #include "DIO_config.h"
+#include "DIO_private.h"
+#include "DIO_interface.h"
+#include "DIO_register.h"
 
 
 
+
+
+void PORT_voidInit(void)
+{
+	/*SET THE PORT Direction*/
+	DDRA=PORTA_DIR;
+	DDRB=PORTB_DIR;
+	DDRC=PORTC_DIR;
+	DDRD=PORTD_DIR;
+
+	/*SET THE PORT Value*/
+	PORTA=PORTA_INT;
+	PORTB=PORTB_INT;
+	PORTC=PORTC_INT;
+	PORTD=PORTD_INT;
+}
 
 u8 DIO_u8SetPinDirection(u8 Copy_u8Port, u8 Copy_u8Pin, u8 Copy_u8Direction)
 {
@@ -25,6 +42,7 @@ u8 DIO_u8SetPinDirection(u8 Copy_u8Port, u8 Copy_u8Pin, u8 Copy_u8Direction)
 	if(Copy_u8Pin<= DIO_u8PIN7)
 	{
 		if(Copy_u8Direction==DIO_u8PIN_INPUT)
+		{
 			switch(Copy_u8Port)
 			{
 			case DIO_u8PORTA: CLR_BIT(DDRA,Copy_u8Pin);break;
@@ -33,6 +51,7 @@ u8 DIO_u8SetPinDirection(u8 Copy_u8Port, u8 Copy_u8Pin, u8 Copy_u8Direction)
 			case DIO_u8PORTD: CLR_BIT(DDRD,Copy_u8Pin);break;
 			default: Local_u8ErrorState=1;
 			}
+		}
 		else if(Copy_u8Direction==DIO_u8PIN_OUTPUT)
 		{
 			switch(Copy_u8Port)
@@ -76,6 +95,7 @@ u8 DIO_u8SetPinValue(u8 Copy_u8Port, u8 Copy_u8Pin, u8 Copy_u8Value)
 	if(Copy_u8Pin<= DIO_u8PIN7)
 	{
 		if(Copy_u8Value==DIO_u8PIN_LOW)
+		{
 			switch(Copy_u8Port)
 			{
 			case DIO_u8PORTA: CLR_BIT(PORTA,Copy_u8Pin);break;
@@ -84,6 +104,7 @@ u8 DIO_u8SetPinValue(u8 Copy_u8Port, u8 Copy_u8Pin, u8 Copy_u8Value)
 			case DIO_u8PORTD: CLR_BIT(PORTD,Copy_u8Pin);break;
 			default: Local_u8ErrorState=1;
 			}
+		}
 		else if(Copy_u8Value==DIO_u8PIN_HIGH)
 		{
 			switch(Copy_u8Port)

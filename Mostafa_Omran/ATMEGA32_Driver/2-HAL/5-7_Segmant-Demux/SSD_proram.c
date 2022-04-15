@@ -12,6 +12,7 @@
 
 #include "DIO_interface.h"
 #include "SSD_interface.h"
+#include "SSD_config.h"
 
 void SSD_voidInit(SSD_t*SSD)
 {
@@ -43,7 +44,7 @@ u8 SSD_Set_Number(u8 Number, SSD_t*SSD)
 		{
 			Local_u8ErrorState=1;
 		}
-		
+
 	}
 	else
 	{
@@ -85,11 +86,117 @@ u8 SSD_Disable(SSD_t*SSD)
 	}
 	return Local_u8ErrorState;
 }
-void SSD_Enable_BY_DEMUX(u8 SSD_Number)
+
+void SSD_DEMUX_Init(SSD_t*SSD)
+{
+	DIO_u8SetPinDirection(DEMUX_PORT,DEMUX_Selector_Pin1,DIO_u8PIN_OUTPUT);
+	DIO_u8SetPinDirection(DEMUX_PORT,DEMUX_Selector_Pin2,DIO_u8PIN_OUTPUT);
+	DIO_u8SetPinDirection(Data_PORT,Data_PIN0,DIO_u8PIN_OUTPUT);
+	DIO_u8SetPinDirection(Data_PORT,Data_PIN1,DIO_u8PIN_OUTPUT);
+	DIO_u8SetPinDirection(Data_PORT,Data_PIN2,DIO_u8PIN_OUTPUT);
+	DIO_u8SetPinDirection(Data_PORT,Data_PIN3,DIO_u8PIN_OUTPUT);
+
+}
+
+void SSD_Switching_BY_DEMUX(u8 SSD_Number)
 {
 	switch(SSD_Number)
 	{
 		case SSD_1:
-			
+			DIO_u8SetPinValue(DEMUX_PORT,DEMUX_Selector_Pin1,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DEMUX_PORT,DEMUX_Selector_Pin2,DIO_u8PIN_LOW);
+			break;
+		case SSD_2:
+			DIO_u8SetPinValue(DEMUX_PORT,DEMUX_Selector_Pin1,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(DEMUX_PORT,DEMUX_Selector_Pin2,DIO_u8PIN_LOW);
+			break;
+		case SSD_3:
+			DIO_u8SetPinValue(DEMUX_PORT,DEMUX_Selector_Pin1,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(DEMUX_PORT,DEMUX_Selector_Pin2,DIO_u8PIN_HIGH);
+			break;
+		case SSD_4:
+			DIO_u8SetPinValue(DEMUX_PORT,DEMUX_Selector_Pin1,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(DEMUX_PORT,DEMUX_Selector_Pin2,DIO_u8PIN_HIGH);
+			break;
+
 	}
+}
+
+u8 SSD_DEMUX_Set_Number(u8 Number)
+{
+	u8 Local_u8ErrorState=0;
+
+		switch(Number)
+		{
+		case 0:
+			DIO_u8SetPinValue(Data_PORT,Data_PIN0,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN1,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN2,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN3,DIO_u8PIN_LOW);
+			break;
+
+		case 1:
+			DIO_u8SetPinValue(Data_PORT,Data_PIN0,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN1,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN2,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN3,DIO_u8PIN_LOW);
+			break;
+
+		case 2:
+			DIO_u8SetPinValue(Data_PORT,Data_PIN0,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN1,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN2,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN3,DIO_u8PIN_LOW);
+			break;
+
+		case 3:
+			DIO_u8SetPinValue(Data_PORT,Data_PIN0,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN1,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN2,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN3,DIO_u8PIN_LOW);
+			break;
+
+		case 4:
+			DIO_u8SetPinValue(Data_PORT,Data_PIN0,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN1,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN2,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN3,DIO_u8PIN_LOW);
+			break;
+
+		case 5:
+			DIO_u8SetPinValue(Data_PORT,Data_PIN0,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN1,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN2,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN3,DIO_u8PIN_LOW);
+			break;
+
+		case 6:
+			DIO_u8SetPinValue(Data_PORT,Data_PIN0,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN1,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN2,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN3,DIO_u8PIN_LOW);
+			break;
+
+		case 7:
+			DIO_u8SetPinValue(Data_PORT,Data_PIN0,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN1,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN2,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN3,DIO_u8PIN_LOW);
+			break;
+
+		case 8:
+			DIO_u8SetPinValue(Data_PORT,Data_PIN0,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN1,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN2,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN3,DIO_u8PIN_HIGH);
+			break;
+
+		case 9:
+			DIO_u8SetPinValue(Data_PORT,Data_PIN0,DIO_u8PIN_HIGH);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN1,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN2,DIO_u8PIN_LOW);
+			DIO_u8SetPinValue(Data_PORT,Data_PIN3,DIO_u8PIN_HIGH);
+			break;
+		}
+	return Local_u8ErrorState;
 }

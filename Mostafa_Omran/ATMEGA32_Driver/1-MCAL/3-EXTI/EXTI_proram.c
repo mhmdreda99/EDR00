@@ -10,10 +10,14 @@
 #include "STD_TYPES.h"
 #include "BIT_MATH.h"
 
-#include "EXTI_interface.h"
-#include "EXTI_privite.h"
+
 #include "EXTI_register.h"
-#include "EXTI_config.h"
+#include "EXTI_interface.h"
+
+
+
+
+
 
 
 //Data section
@@ -57,20 +61,20 @@ u8 EXTI_u8Int0Init(u8 ExtInt_SenseControl)
             SET_BIT(MCUCR,MCUCR_ISC01);
             break;
         default:
-            Local_u8ErrorState=1
+            Local_u8ErrorState=1;
             break;
     }
     return Local_u8ErrorState;
 }
 
 //set user function to be executed on ISR
-void INT0_voidCallBack(void*(func_Ptr)(void))
+void INT0_voidCallBack(void(*func_Ptr)(void))
 {
     User_Func0=func_Ptr;
 }
 
 // initializaing the External Interrupt 1
-u8 EXTI_u8Int2Init(u8 ExtInt_SenseControl)
+u8 EXTI_u8Int1Init(u8 ExtInt_SenseControl)
 {
     u8 Local_u8ErrorState=0;
 
@@ -88,14 +92,14 @@ u8 EXTI_u8Int2Init(u8 ExtInt_SenseControl)
             SET_BIT(MCUCR,MCUCR_ISC11);
             break;
         default:
-            Local_u8ErrorState=1
+            Local_u8ErrorState=1;
             break;
     }
     return Local_u8ErrorState;
 }
 
 //set user function to be executed on ISR
-void INT1_voidCallBack(void*(func_Ptr)(void))
+void INT1_voidCallBack(void(*func_Ptr)(void))
 {
     User_Func1=func_Ptr;
 }
@@ -111,20 +115,20 @@ u8 EXTI_u8Int2Init(u8 ExtInt_SenseControl)
     switch(ExtInt_SenseControl)
     {
         case EXTI_FALLING_EDGE:
-            CLR_BIT(MCUCR,MCUCR_ISC2);
+            CLR_BIT(MCUSCR,MCUSCR_ISC2);
             break;
         case EXTI_RISING_EDGE:
-            SET_BIT(MCUCR,MCUCR_ISC2);
+            SET_BIT(MCUSCR,MCUSCR_ISC2);
             break;
         default:
-            Local_u8ErrorState=1
+            Local_u8ErrorState=1;
             break;
     }
     return Local_u8ErrorState;
 }
 
 //set user function to be executed on ISR
-void INT2_voidCallBack(void*(func_Ptr)(void))
+void INT2_voidCallBack(void(*func_Ptr)(void))
 {
     User_Func2=func_Ptr;
 }
