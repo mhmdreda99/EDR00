@@ -21,6 +21,7 @@ C_DEPS :=
 SUBDIRS := \
 APP/StopWatch \
 HAL/.metadata/.plugins/org.eclipse.cdt.make.core \
+HAL/Keypad \
 HAL/LCD \
 HAL/SevenSegment_Driver/.metadata/.plugins/org.eclipse.cdt.make.core \
 HAL/SevenSegment_Driver \
