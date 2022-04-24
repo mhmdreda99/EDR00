@@ -1,0 +1,88 @@
+.TH "APP/main.c" 3 "Thu Apr 21 2022" "Version 1.0" "STOPWATCH" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+APP/main.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <util/delay\&.h>\fP
+.br
+\fC#include '\&.\&./MCAL/DIO/DIO_Interface\&.h'\fP
+.br
+\fC#include '\&.\&./HAL/LED/LED_Interface\&.h'\fP
+.br
+\fC#include '\&.\&./HAL/SSD/SSD_Interface\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBF_CPU\fP   8000000UL"
+.br
+.ti -1c
+.RI "#define \fBSEVEN_SEG_DELAY\fP   2"
+.br
+.ti -1c
+.RI "#define \fBDELAY\fP   ( (\fBu8\fP)( 1000 / (\fBSEVEN_SEG_DELAY\fP*4) ) )"
+.br
+.ti -1c
+.RI "#define \fBPRESSED\fP   0"
+.br
+.ti -1c
+.RI "#define \fBSTART\fP   1"
+.br
+.ti -1c
+.RI "#define \fBSTOP\fP   0"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBmain\fP (void)"
+.br
+.RI "main code for stopwatch application using four 7-segment and push button Drivers start/pause : when pressed count stop until it's pressed again reset button : when pressed reset count to zero and stop count until start/stop button is pressed "
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBu8\fP \fBAPP_u8StopStartButtonState\fP = \fBSTOP\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DELAY   ( (\fBu8\fP)( 1000 / (\fBSEVEN_SEG_DELAY\fP*4) ) )"
+
+.SS "#define F_CPU   8000000UL"
+
+.SS "#define PRESSED   0"
+
+.SS "#define SEVEN_SEG_DELAY   2"
+
+.SS "#define START   1"
+
+.SS "#define STOP   0"
+
+.SH "Function Documentation"
+.PP 
+.SS "int main (void)"
+
+.PP
+main code for stopwatch application using four 7-segment and push button Drivers start/pause : when pressed count stop until it's pressed again reset button : when pressed reset count to zero and stop count until start/stop button is pressed 
+.PP
+\fBReturns\fP
+.RS 4
+int 
+.RE
+.PP
+
+.SH "Variable Documentation"
+.PP 
+.SS "\fBu8\fP APP_u8StopStartButtonState = \fBSTOP\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STOPWATCH from the source code\&.

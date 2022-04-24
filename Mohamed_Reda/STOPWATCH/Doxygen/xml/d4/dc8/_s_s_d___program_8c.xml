@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="d4/dc8/_s_s_d___program_8c" kind="file" language="C++">
+    <compoundname>SSD_Program.c</compoundname>
+    <includes refid="df/de9/_l_e_d___interface_8h" local="yes">../LED/LED_Interface.h</includes>
+    <includes refid="d0/d28/_s_s_d___private_8h" local="yes">SSD_Private.h</includes>
+    <includes refid="d6/d8a/_s_s_d___interface_8h" local="yes">SSD_Interface.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>../../LIB/STD_TYPES.h</label>
+        <link refid="d1/de4/_s_t_d___t_y_p_e_s_8h"/>
+      </node>
+      <node id="2">
+        <label>../LED/LED_Interface.h</label>
+        <link refid="df/de9/_l_e_d___interface_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>SSD_Interface.h</label>
+        <link refid="d6/d8a/_s_s_d___interface_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>SSD_Private.h</label>
+        <link refid="d0/d28/_s_s_d___private_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>HAL/SSD/SSD_Program.c</label>
+        <link refid="d4/dc8/_s_s_d___program_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d4/dc8/_s_s_d___program_8c_1a2370d47c8ec3155ae3a65afe2890ba4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 SSD_u8Init</definition>
+        <argsstring>(u8 u8Reg)</argsstring>
+        <name>SSD_u8Init</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d4/dc8/_s_s_d___program_8c_1a2370d47c8ec3155ae3a65afe2890ba4c" kindref="member">SSD_u8Init(u8 u8Reg)</ref>; Description : Initialize one 7-Segment of 8 LEDs on specific port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only MDIO_PORTA,MDIO_PORTB,MDIO_PORTC,MDIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HAL/SSD/SSD_Program.c" line="24" column="4" bodyfile="HAL/SSD/SSD_Program.c" bodystart="24" bodyend="29"/>
+        <references refid="df/de9/_l_e_d___interface_8h_1ad1ed5dca8591a65e65833dce0b91cad6" compoundref="d0/dcc/_l_e_d___program_8c" startline="42" endline="47">LED_u8InitLedString</references>
+      </memberdef>
+      <memberdef kind="function" id="d4/dc8/_s_s_d___program_8c_1af9e467c610672e7d22cf266b0654177f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 SSD_u8DisplayNumber</definition>
+        <argsstring>(u8 u8Reg, u8 u8DisblayNumber)</argsstring>
+        <name>SSD_u8DisplayNumber</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8DisblayNumber</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d4/dc8/_s_s_d___program_8c_1af9e467c610672e7d22cf266b0654177f" kindref="member">SSD_u8DisplayNumber(u8 u8Reg,u8 u8DisblayNumber)</ref>; Description : Display a number on a given 7-segment. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only MDIO_PORTA,MDIO_PORTB,MDIO_PORTC,MDIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8DisblayNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number : takes only from 0 to 9 </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 number for error handling (0) means no error, (1) means Undefined PORT, (2) means Display Number out of range error </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HAL/SSD/SSD_Program.c" line="41" column="4" bodyfile="HAL/SSD/SSD_Program.c" bodystart="41" bodyend="57"/>
+        <references refid="df/de9/_l_e_d___interface_8h_1a62eb98cadd1d1ecaaff812d254ffcb49" compoundref="d0/dcc/_l_e_d___program_8c" startline="77" endline="82">LED_u8LedStringOnOff</references>
+        <references refid="d0/d28/_s_s_d___private_8h_1a9430a05767c08944cb531d1fedeedb79" compoundref="d0/d28/_s_s_d___private_8h" startline="17">SSD_u8SevenSegArray</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>File<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>SSD_Program.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Description<sp/>:<sp/>This<sp/>interface<sp/>file<sp/>includes<sp/>7SEG<sp/>Driver<sp/>implementations<sp/>for<sp/>Atmega32</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Mohamed<sp/>reda<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>18/4/2022</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Git<sp/>account<sp/>:<sp/>https://github.com/mhmdreda99</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>mail<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>dev.mhmdreda99@gmail.com</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../LED/LED_Interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d0/d28/_s_s_d___private_8h" kindref="compound">SSD_Private.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/d8a/_s_s_d___interface_8h" kindref="compound">SSD_Interface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="d4/dc8/_s_s_d___program_8c_1a2370d47c8ec3155ae3a65afe2890ba4c" refkind="member"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d4/dc8/_s_s_d___program_8c_1a2370d47c8ec3155ae3a65afe2890ba4c" kindref="member">SSD_u8Init</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*initialize<sp/>7-segment<sp/>led<sp/>string<sp/>at<sp/>desired<sp/>port<sp/>and<sp/>return<sp/>error<sp/>value*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="df/de9/_l_e_d___interface_8h_1ad1ed5dca8591a65e65833dce0b91cad6" kindref="member">LED_u8InitLedString</ref>(u8Reg);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight><highlight class="comment">/*end<sp/>of<sp/>SSD_u8Init()*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="d4/dc8/_s_s_d___program_8c_1af9e467c610672e7d22cf266b0654177f" refkind="member"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d4/dc8/_s_s_d___program_8c_1af9e467c610672e7d22cf266b0654177f" kindref="member">SSD_u8DisplayNumber</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8DisblayNumber)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Disblay<sp/>Number<sp/>check<sp/>condition*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>(u8DisblayNumber<sp/>&gt;=<sp/>0)<sp/>||<sp/>(u8DisblayNumber&lt;10)<sp/>)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Disblay<sp/>number<sp/>from<sp/>seven<sp/>segment<sp/>array<sp/>and<sp/>return<sp/>error<sp/>value*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="df/de9/_l_e_d___interface_8h_1a62eb98cadd1d1ecaaff812d254ffcb49" kindref="member">LED_u8LedStringOnOff</ref>(u8Reg,<ref refid="d0/d28/_s_s_d___private_8h_1a9430a05767c08944cb531d1fedeedb79" kindref="member">SSD_u8SevenSegArray</ref>[u8DisblayNumber]);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Disblay<sp/>Number<sp/>out<sp/>of<sp/>range<sp/>error*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2;<sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="comment">/*End<sp/>of<sp/>Disblay<sp/>Number<sp/>check<sp/>condition*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight><highlight class="comment">/*end<sp/>of<sp/>SSD_u8DisplayNumber()*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="HAL/SSD/SSD_Program.c"/>
+  </compounddef>
+</doxygen>

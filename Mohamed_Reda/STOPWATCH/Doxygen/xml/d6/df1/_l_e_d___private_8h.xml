@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="d6/df1/_l_e_d___private_8h" kind="file" language="C++">
+    <compoundname>LED_Private.h</compoundname>
+    <includedby refid="d0/dcc/_l_e_d___program_8c" local="yes">HAL/LED/LED_Program.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>HAL/LED/LED_Private.h</label>
+        <link refid="d6/df1/_l_e_d___private_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>HAL/LED/LED_Program.c</label>
+        <link refid="d0/dcc/_l_e_d___program_8c"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+    </programlisting>
+    <location file="HAL/LED/LED_Private.h"/>
+  </compounddef>
+</doxygen>

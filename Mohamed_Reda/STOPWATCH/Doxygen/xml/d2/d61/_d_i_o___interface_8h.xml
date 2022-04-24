@@ -1,0 +1,1288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="d2/d61/_d_i_o___interface_8h" kind="file" language="C++">
+    <compoundname>DIO_Interface.h</compoundname>
+    <includes refid="d1/de4/_s_t_d___t_y_p_e_s_8h" local="yes">../../LIB/STD_TYPES.h</includes>
+    <includes refid="d7/dca/_s_t_d___m_a_c_r_o_s_8h" local="yes">../../LIB/STD_MACROS.h</includes>
+    <includedby refid="d0/d29/main_8c" local="yes">APP/main.c</includedby>
+    <includedby refid="dd/dfd/_d_i_o___program_8c" local="yes">MCAL/DIO/DIO_Program.c</includedby>
+    <includedby refid="d0/dcc/_l_e_d___program_8c" local="yes">HAL/LED/LED_Program.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>../../LIB/STD_TYPES.h</label>
+        <link refid="d1/de4/_s_t_d___t_y_p_e_s_8h"/>
+      </node>
+      <node id="3">
+        <label>../../LIB/STD_MACROS.h</label>
+        <link refid="d7/dca/_s_t_d___m_a_c_r_o_s_8h"/>
+      </node>
+      <node id="1">
+        <label>MCAL/DIO/DIO_Interface.h</label>
+        <link refid="d2/d61/_d_i_o___interface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>APP/main.c</label>
+        <link refid="d0/d29/main_8c"/>
+      </node>
+      <node id="4">
+        <label>HAL/LED/LED_Program.c</label>
+        <link refid="d0/dcc/_l_e_d___program_8c"/>
+      </node>
+      <node id="1">
+        <label>MCAL/DIO/DIO_Interface.h</label>
+        <link refid="d2/d61/_d_i_o___interface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MCAL/DIO/DIO_Program.c</label>
+        <link refid="dd/dfd/_d_i_o___program_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1ab63eed3b7e5edffda0bd2ba2961e3f4a" prot="public" static="no">
+        <name>DIO_EN_PULL_UP_RES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="20" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1afcd60341eda5d397be2c49b9e53d248b" prot="public" static="no">
+        <name>DIO_DIS_PULL_UP_RES</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="21" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a648ee6476ac405a3803d4927c6160b71" prot="public" static="no">
+        <name>DIO_OUTPUT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="23" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1afb70917ae68732d1dbd6bd120b6c757a" prot="public" static="no">
+        <name>DIO_INPUT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="24" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a8bc63994a481798464caf18cd08b6c45" prot="public" static="no">
+        <name>DIO_HIGH</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="25" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a199d8c89f64de45151ce89e33e1ae558" prot="public" static="no">
+        <name>DIO_LOW</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="26" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1afdbf33121323dbcbb7927257feaae015" prot="public" static="no">
+        <name>DIO_ON</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="27" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a62465f8098d6cc213621e0ec525f83ce" prot="public" static="no">
+        <name>DIO_OFF</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="28" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" prot="public" static="no">
+        <name>DIO_PORTA</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="32" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" prot="public" static="no">
+        <name>DIO_PORTB</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="33" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" prot="public" static="no">
+        <name>DIO_PORTC</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="34" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" prot="public" static="no">
+        <name>DIO_PORTD</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="35" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a64201dce635547e424829c2696ade343" prot="public" static="no">
+        <name>DIO_PA0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="38" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1aae63aeb4c9920fb19e95b884c9048701" prot="public" static="no">
+        <name>DIO_PA1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="39" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a20669a508f4b3676f14e4137a6cf6372" prot="public" static="no">
+        <name>DIO_PA2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="40" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1acef1558fd56dfd84b8a073ff86e8eb94" prot="public" static="no">
+        <name>DIO_PA3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="41" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1af4a95128c20b507637a9671d79a4eb32" prot="public" static="no">
+        <name>DIO_PA4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="42" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1ab56b85b8a6c24aeebcc5710054d591dd" prot="public" static="no">
+        <name>DIO_PA5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="43" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a464da0354f55f025013b991d6d00955f" prot="public" static="no">
+        <name>DIO_PA6</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="44" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a3806712cbb1320ed2a6215b234941786" prot="public" static="no">
+        <name>DIO_PA7</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="45" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a2713c4bdbf0221c8dec4a74483eab05b" prot="public" static="no">
+        <name>DIO_PB0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="48" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a8de118c5b1e0a5f5b2f3312019085025" prot="public" static="no">
+        <name>DIO_PB1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="49" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a407105607c4e62f53d583a76a65fb54f" prot="public" static="no">
+        <name>DIO_PB2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="50" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a63e6f4e729fe5be17979cb9a3e9fe194" prot="public" static="no">
+        <name>DIO_PB3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="51" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1ac398468970aae6e11be226a852c85d79" prot="public" static="no">
+        <name>DIO_PB4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="52" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a16d043553e2d46ad54b5b4238b8212df" prot="public" static="no">
+        <name>DIO_PB5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="53" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1aa5b5961350b87951465986ad8da567f9" prot="public" static="no">
+        <name>DIO_PB6</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="54" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a7e0b434ed6890b6a017b3a5e8b88512f" prot="public" static="no">
+        <name>DIO_PB7</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="55" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a28e1493995ba5e8c904e57174a8a5069" prot="public" static="no">
+        <name>DIO_PC0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="58" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a2006f5ac1678c63a9bcaf3b552971a16" prot="public" static="no">
+        <name>DIO_PC1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="59" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1ab6acb4c5773e58a522ac1e1b6c88582d" prot="public" static="no">
+        <name>DIO_PC2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="60" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a803d4a272d1263c9d5acdefa862ca6b6" prot="public" static="no">
+        <name>DIO_PC3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="61" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a6dd1b2c975486320c056ff1e37262f95" prot="public" static="no">
+        <name>DIO_PC4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="62" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a704d0d0c0b06c0061e5fd656e6ba3f7b" prot="public" static="no">
+        <name>DIO_PC5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="63" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a9102408228abbe6e38ef8cd4461969dd" prot="public" static="no">
+        <name>DIO_PC6</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="64" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a61001a2a0d8eceaa46c8580397ea87dc" prot="public" static="no">
+        <name>DIO_PC7</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="65" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a51c8058512b5e1c0ca55dbd665c76054" prot="public" static="no">
+        <name>DIO_PD0</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="68" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1afca6880a47250454e093cb906c716047" prot="public" static="no">
+        <name>DIO_PD1</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="69" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1ae9e758d7aa80ba1f4e74bd7e1ce431f7" prot="public" static="no">
+        <name>DIO_PD2</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="70" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a2d67db1da53217e8c43bff0ead57ec2b" prot="public" static="no">
+        <name>DIO_PD3</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="71" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1ad24d149b4423d6e4bb7bd6031ffe021c" prot="public" static="no">
+        <name>DIO_PD4</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="72" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a45ed4d8379a5bade19e0160fab3f79e3" prot="public" static="no">
+        <name>DIO_PD5</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="73" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1a54aae9756fc18bf6d72fe94ae5774953" prot="public" static="no">
+        <name>DIO_PD6</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="74" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d2/d61/_d_i_o___interface_8h_1ad1713f58faaf70e9acf51a3dfbeb81c6" prot="public" static="no">
+        <name>DIO_PD7</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="75" column="9" bodyfile="MCAL/DIO/DIO_Interface.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d2/d61/_d_i_o___interface_8h_1a838f198cf45e2184ad898310a0d113d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 DIO_u8SetDirectionReg</definition>
+        <argsstring>(u8 u8Reg, u8 u8Status)</argsstring>
+        <name>DIO_u8SetDirectionReg</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Status</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1a838f198cf45e2184ad898310a0d113d2" kindref="member">DIO_u8SetDirectionReg(u8 u8Reg,u8 u8Status)</ref>; Description : Set direction of the whole register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status : takes INPUT sets whole reg i/p,OUTPUT sets whole reg o/p, or Custom -(0-255)values- DDRx values </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 : u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="92" column="4" bodyfile="MCAL/DIO/DIO_Program.c" bodystart="29" bodyend="63" declfile="MCAL/DIO/DIO_Interface.h" declline="92" declcolumn="4"/>
+        <references refid="d4/da7/_d_i_o___private_8h_1ada011c5bf95ab91774eee5c29b45fd06" compoundref="d4/da7/_d_i_o___private_8h" startline="18">DDRA</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a924a54df722121bc98383bdec5ae1898" compoundref="d4/da7/_d_i_o___private_8h" startline="23">DDRB</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a13004c90aa4b54f1bc3fbd25ad3fd645" compoundref="d4/da7/_d_i_o___private_8h" startline="29">DDRC</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1ae24189eeb3ce4bccd97d46e88f494e0a" compoundref="d4/da7/_d_i_o___private_8h" startline="34">DDRD</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afb70917ae68732d1dbd6bd120b6c757a" compoundref="d2/d61/_d_i_o___interface_8h" startline="24">DIO_INPUT</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a648ee6476ac405a3803d4927c6160b71" compoundref="d2/d61/_d_i_o___interface_8h" startline="23">DIO_OUTPUT</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" compoundref="d2/d61/_d_i_o___interface_8h" startline="32">DIO_PORTA</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" compoundref="d2/d61/_d_i_o___interface_8h" startline="33">DIO_PORTB</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" compoundref="d2/d61/_d_i_o___interface_8h" startline="34">DIO_PORTC</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" compoundref="d2/d61/_d_i_o___interface_8h" startline="35">DIO_PORTD</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d61/_d_i_o___interface_8h_1a70816d064e56daeac2ba114ae81539d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 DIO_u8SetDirectionBit</definition>
+        <argsstring>(u8 u8Reg, u8 u8Bit, u8 u8Status)</argsstring>
+        <name>DIO_u8SetDirectionBit</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Bit</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Status</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1a70816d064e56daeac2ba114ae81539d0" kindref="member">DIO_u8SetDirectionBit(u8 u8Reg,u8 u8Bit,u8 u8Status)</ref>; Description : Set direction of one bit of the register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2.... </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Status</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Status : takes only INPUT,OUTPUT </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range, (3) means status value out of range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="105" column="4" bodyfile="MCAL/DIO/DIO_Program.c" bodystart="75" bodyend="110" declfile="MCAL/DIO/DIO_Interface.h" declline="105" declcolumn="4"/>
+        <references refid="d4/da7/_d_i_o___private_8h_1ada011c5bf95ab91774eee5c29b45fd06" compoundref="d4/da7/_d_i_o___private_8h" startline="18">DDRA</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a924a54df722121bc98383bdec5ae1898" compoundref="d4/da7/_d_i_o___private_8h" startline="23">DDRB</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a13004c90aa4b54f1bc3fbd25ad3fd645" compoundref="d4/da7/_d_i_o___private_8h" startline="29">DDRC</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1ae24189eeb3ce4bccd97d46e88f494e0a" compoundref="d4/da7/_d_i_o___private_8h" startline="34">DDRD</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" compoundref="d2/d61/_d_i_o___interface_8h" startline="32">DIO_PORTA</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" compoundref="d2/d61/_d_i_o___interface_8h" startline="33">DIO_PORTB</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" compoundref="d2/d61/_d_i_o___interface_8h" startline="34">DIO_PORTC</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" compoundref="d2/d61/_d_i_o___interface_8h" startline="35">DIO_PORTD</references>
+        <references refid="d7/dca/_s_t_d___m_a_c_r_o_s_8h_1a3c980171dff030311d0794c2de93f754" compoundref="d7/dca/_s_t_d___m_a_c_r_o_s_8h" startline="66">SET_BIT_VALUE</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d61/_d_i_o___interface_8h_1afebdfc3bad8fdab9fbdbfe955f3f445e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 DIO_u8WriteReg</definition>
+        <argsstring>(u8 u8Reg, u8 u8Value)</argsstring>
+        <name>DIO_u8WriteReg</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Value</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1afebdfc3bad8fdab9fbdbfe955f3f445e" kindref="member">DIO_u8WriteReg(u8 u8Reg,u8 u8Value)</ref>; Description : write o/p to the whole register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value : takes HIGH sets whole reg high,LOW sets whole reg low, or Custom -(0-255)values- PORTx values </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 : number used for error handling (0) means no error,(1) means Undefined PORT Argument</para>
+</simplesect>
+Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1afebdfc3bad8fdab9fbdbfe955f3f445e" kindref="member">DIO_u8WriteReg(u8 u8Reg,u8 u8Value)</ref>; Description : write o/p to the whole register.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2.... </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value : takes only HIGH,LOW </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range, (3) means Bit value out of range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="121" column="4" bodyfile="MCAL/DIO/DIO_Program.c" bodystart="127" bodyend="161" declfile="MCAL/DIO/DIO_Interface.h" declline="121" declcolumn="4"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a8bc63994a481798464caf18cd08b6c45" compoundref="d2/d61/_d_i_o___interface_8h" startline="25">DIO_HIGH</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a199d8c89f64de45151ce89e33e1ae558" compoundref="d2/d61/_d_i_o___interface_8h" startline="26">DIO_LOW</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" compoundref="d2/d61/_d_i_o___interface_8h" startline="32">DIO_PORTA</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" compoundref="d2/d61/_d_i_o___interface_8h" startline="33">DIO_PORTB</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" compoundref="d2/d61/_d_i_o___interface_8h" startline="34">DIO_PORTC</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" compoundref="d2/d61/_d_i_o___interface_8h" startline="35">DIO_PORTD</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a7c8a7f98a98d8cb125dd57a66720ab30" compoundref="d4/da7/_d_i_o___private_8h" startline="17">PORTA</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a09a0c85cd3da09d9cdf63a5ac4c39f77" compoundref="d4/da7/_d_i_o___private_8h" startline="22">PORTB</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a68fea88642279a70246e026e7221b0a5" compoundref="d4/da7/_d_i_o___private_8h" startline="28">PORTC</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a3e6a2517db4f9cb7c9037adf0aefe79b" compoundref="d4/da7/_d_i_o___private_8h" startline="33">PORTD</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d61/_d_i_o___interface_8h_1abec487182046db105087ba55742a889b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 DIO_u8WriteBit</definition>
+        <argsstring>(u8 u8Reg, u8 u8Bit, u8 u8Value)</argsstring>
+        <name>DIO_u8WriteBit</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Bit</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Value</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1abec487182046db105087ba55742a889b" kindref="member">DIO_u8WriteBit(u8 u8Reg,u8 u8Bit,u8 u8Value)</ref>; Description : Write value of one bit of the register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2.... </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value : takes only HIGH,LOW </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range, (3) means Bit value out of range</para>
+</simplesect>
+Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1abec487182046db105087ba55742a889b" kindref="member">DIO_u8WriteBit(u8 u8Reg,u8 u8Bit,u8 u8Value)</ref>; Description : Write value of one bit of the register.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="135" column="4" bodyfile="MCAL/DIO/DIO_Program.c" bodystart="174" bodyend="209" declfile="MCAL/DIO/DIO_Interface.h" declline="135" declcolumn="4"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" compoundref="d2/d61/_d_i_o___interface_8h" startline="32">DIO_PORTA</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" compoundref="d2/d61/_d_i_o___interface_8h" startline="33">DIO_PORTB</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" compoundref="d2/d61/_d_i_o___interface_8h" startline="34">DIO_PORTC</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" compoundref="d2/d61/_d_i_o___interface_8h" startline="35">DIO_PORTD</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a7c8a7f98a98d8cb125dd57a66720ab30" compoundref="d4/da7/_d_i_o___private_8h" startline="17">PORTA</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a09a0c85cd3da09d9cdf63a5ac4c39f77" compoundref="d4/da7/_d_i_o___private_8h" startline="22">PORTB</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a68fea88642279a70246e026e7221b0a5" compoundref="d4/da7/_d_i_o___private_8h" startline="28">PORTC</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a3e6a2517db4f9cb7c9037adf0aefe79b" compoundref="d4/da7/_d_i_o___private_8h" startline="33">PORTD</references>
+        <references refid="d7/dca/_s_t_d___m_a_c_r_o_s_8h_1a3c980171dff030311d0794c2de93f754" compoundref="d7/dca/_s_t_d___m_a_c_r_o_s_8h" startline="66">SET_BIT_VALUE</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d61/_d_i_o___interface_8h_1a875e3058c52455441e3f18efe84198e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 DIO_u8ToggleReg</definition>
+        <argsstring>(u8 u8Reg)</argsstring>
+        <name>DIO_u8ToggleReg</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1a875e3058c52455441e3f18efe84198e5" kindref="member">DIO_u8ToggleReg(u8 u8Reg)</ref>; Description : Toggles pin values of the whole register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument</para>
+</simplesect>
+Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1a875e3058c52455441e3f18efe84198e5" kindref="member">DIO_u8ToggleReg(u8 u8Reg)</ref>; Description : Toggles pin values of the whole register.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2.... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="147" column="4" bodyfile="MCAL/DIO/DIO_Program.c" bodystart="223" bodyend="237" declfile="MCAL/DIO/DIO_Interface.h" declline="147" declcolumn="4"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" compoundref="d2/d61/_d_i_o___interface_8h" startline="32">DIO_PORTA</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" compoundref="d2/d61/_d_i_o___interface_8h" startline="33">DIO_PORTB</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" compoundref="d2/d61/_d_i_o___interface_8h" startline="34">DIO_PORTC</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" compoundref="d2/d61/_d_i_o___interface_8h" startline="35">DIO_PORTD</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a7c8a7f98a98d8cb125dd57a66720ab30" compoundref="d4/da7/_d_i_o___private_8h" startline="17">PORTA</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a09a0c85cd3da09d9cdf63a5ac4c39f77" compoundref="d4/da7/_d_i_o___private_8h" startline="22">PORTB</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a68fea88642279a70246e026e7221b0a5" compoundref="d4/da7/_d_i_o___private_8h" startline="28">PORTC</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a3e6a2517db4f9cb7c9037adf0aefe79b" compoundref="d4/da7/_d_i_o___private_8h" startline="33">PORTD</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d61/_d_i_o___interface_8h_1aac4bffaf9e068e9511de8c6d9d23f0c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 DIO_u8ToggleBit</definition>
+        <argsstring>(u8 u8Reg, u8 u8Bit)</argsstring>
+        <name>DIO_u8ToggleBit</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Bit</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1aac4bffaf9e068e9511de8c6d9d23f0c5" kindref="member">DIO_u8ToggleBit(u8 u8Reg,u8 u8Bit)</ref>; Description : Toggle pin value of one bit of the register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2.... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range</para>
+</simplesect>
+Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1aac4bffaf9e068e9511de8c6d9d23f0c5" kindref="member">DIO_u8ToggleBit(u8 u8Reg,u8 u8Bit)</ref>; Description : Toggle pin value of one bit of the register.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 Register reading of type u8, it will always return 240(0xAA)(0b10101010) in case of Undefined Port error whatever the actual reading is </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="159" column="4" bodyfile="MCAL/DIO/DIO_Program.c" bodystart="248" bodyend="272" declfile="MCAL/DIO/DIO_Interface.h" declline="159" declcolumn="4"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" compoundref="d2/d61/_d_i_o___interface_8h" startline="32">DIO_PORTA</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" compoundref="d2/d61/_d_i_o___interface_8h" startline="33">DIO_PORTB</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" compoundref="d2/d61/_d_i_o___interface_8h" startline="34">DIO_PORTC</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" compoundref="d2/d61/_d_i_o___interface_8h" startline="35">DIO_PORTD</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a7c8a7f98a98d8cb125dd57a66720ab30" compoundref="d4/da7/_d_i_o___private_8h" startline="17">PORTA</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a09a0c85cd3da09d9cdf63a5ac4c39f77" compoundref="d4/da7/_d_i_o___private_8h" startline="22">PORTB</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a68fea88642279a70246e026e7221b0a5" compoundref="d4/da7/_d_i_o___private_8h" startline="28">PORTC</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a3e6a2517db4f9cb7c9037adf0aefe79b" compoundref="d4/da7/_d_i_o___private_8h" startline="33">PORTD</references>
+        <references refid="d7/dca/_s_t_d___m_a_c_r_o_s_8h_1a92554b11b0ee688137d1d18d7b1aebbb" compoundref="d7/dca/_s_t_d___m_a_c_r_o_s_8h" startline="34">TOGGLE_BIT</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d61/_d_i_o___interface_8h_1ad0847f023453f32f17083d31a18b6f76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 DIO_u8ReadReg</definition>
+        <argsstring>(u8 u8Reg)</argsstring>
+        <name>DIO_u8ReadReg</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1ad0847f023453f32f17083d31a18b6f76" kindref="member">DIO_u8ReadReg(u8 u8Reg)</ref>; Description : Read i/p of the whole register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 Register reading of type u8, it will always return 240(0xAA)(0b10101010) in case of Undefined Port error whatever the actual reading is</para>
+</simplesect>
+Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1ad0847f023453f32f17083d31a18b6f76" kindref="member">DIO_u8ReadReg(u8 u8Reg)</ref>; Description : Read i/p of the whole register.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2.... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 actual reading (0 or 1) or number used for error handling (2) means Undefined PORT Argument, (3) means Bit number out of range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="177" column="4" bodyfile="MCAL/DIO/DIO_Program.c" bodystart="288" bodyend="302" declfile="MCAL/DIO/DIO_Interface.h" declline="177" declcolumn="4"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" compoundref="d2/d61/_d_i_o___interface_8h" startline="32">DIO_PORTA</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" compoundref="d2/d61/_d_i_o___interface_8h" startline="33">DIO_PORTB</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" compoundref="d2/d61/_d_i_o___interface_8h" startline="34">DIO_PORTC</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" compoundref="d2/d61/_d_i_o___interface_8h" startline="35">DIO_PORTD</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1aa5b59706bf235bbd1936ae801f125507" compoundref="d4/da7/_d_i_o___private_8h" startline="19">PINA</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a49f0e8289e962c02128f24b94d7aea7c" compoundref="d4/da7/_d_i_o___private_8h" startline="24">PINB</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a0545e73dc7ae14b1f62293c1feba3983" compoundref="d4/da7/_d_i_o___private_8h" startline="30">PINC</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a50997bc44119b844ceaab463c564bfb7" compoundref="d4/da7/_d_i_o___private_8h" startline="35">PIND</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d61/_d_i_o___interface_8h_1a28a770cb1da696f96103fd3fecaa11ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 DIO_u8ReadBit</definition>
+        <argsstring>(u8 u8Reg, u8 u8Bit)</argsstring>
+        <name>DIO_u8ReadBit</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Bit</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1a28a770cb1da696f96103fd3fecaa11ef" kindref="member">DIO_u8ReadBit(u8 u8Reg,u8 u8Bit)</ref>; Description : Read pin value of one bit of the register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2.... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 actual reading (0 or 1) or number used for error handling (2) means Undefined PORT Argument, (3) means Bit number out of range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="189" column="4" bodyfile="MCAL/DIO/DIO_Program.c" bodystart="313" bodyend="337" declfile="MCAL/DIO/DIO_Interface.h" declline="189" declcolumn="4"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" compoundref="d2/d61/_d_i_o___interface_8h" startline="32">DIO_PORTA</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" compoundref="d2/d61/_d_i_o___interface_8h" startline="33">DIO_PORTB</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" compoundref="d2/d61/_d_i_o___interface_8h" startline="34">DIO_PORTC</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" compoundref="d2/d61/_d_i_o___interface_8h" startline="35">DIO_PORTD</references>
+        <references refid="d7/dca/_s_t_d___m_a_c_r_o_s_8h_1ac9767b66a8de270e7eb51c24e404325b" compoundref="d7/dca/_s_t_d___m_a_c_r_o_s_8h" startline="41">GET_BIT</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1aa5b59706bf235bbd1936ae801f125507" compoundref="d4/da7/_d_i_o___private_8h" startline="19">PINA</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a49f0e8289e962c02128f24b94d7aea7c" compoundref="d4/da7/_d_i_o___private_8h" startline="24">PINB</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a0545e73dc7ae14b1f62293c1feba3983" compoundref="d4/da7/_d_i_o___private_8h" startline="30">PINC</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a50997bc44119b844ceaab463c564bfb7" compoundref="d4/da7/_d_i_o___private_8h" startline="35">PIND</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d61/_d_i_o___interface_8h_1aaceca9396540e142783e248fe1c114c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 DIO_u8ConfigPullupReg</definition>
+        <argsstring>(u8 u8Reg, u8 u8PullUpResStatus)</argsstring>
+        <name>DIO_u8ConfigPullupReg</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8PullUpResStatus</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1aaceca9396540e142783e248fe1c114c9" kindref="member">DIO_u8ConfigPullupReg(u8 u8Reg,u8 u8PullUpResStatus)</ref>; Description : Configure pullup Res status for the whole register. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register : takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8PullUpResStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pull up res : takes only DIO_EN_PULL_UP_RES (will enable it for the whole reg) or DIO_DIS_PULL_UP_RES (will disable it for the whole reg) or a custom value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="208" column="4" bodyfile="MCAL/DIO/DIO_Program.c" bodystart="354" bodyend="389" declfile="MCAL/DIO/DIO_Interface.h" declline="208" declcolumn="4"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afcd60341eda5d397be2c49b9e53d248b" compoundref="d2/d61/_d_i_o___interface_8h" startline="21">DIO_DIS_PULL_UP_RES</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1ab63eed3b7e5edffda0bd2ba2961e3f4a" compoundref="d2/d61/_d_i_o___interface_8h" startline="20">DIO_EN_PULL_UP_RES</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" compoundref="d2/d61/_d_i_o___interface_8h" startline="32">DIO_PORTA</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" compoundref="d2/d61/_d_i_o___interface_8h" startline="33">DIO_PORTB</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" compoundref="d2/d61/_d_i_o___interface_8h" startline="34">DIO_PORTC</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" compoundref="d2/d61/_d_i_o___interface_8h" startline="35">DIO_PORTD</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a7c8a7f98a98d8cb125dd57a66720ab30" compoundref="d4/da7/_d_i_o___private_8h" startline="17">PORTA</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a09a0c85cd3da09d9cdf63a5ac4c39f77" compoundref="d4/da7/_d_i_o___private_8h" startline="22">PORTB</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a68fea88642279a70246e026e7221b0a5" compoundref="d4/da7/_d_i_o___private_8h" startline="28">PORTC</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a3e6a2517db4f9cb7c9037adf0aefe79b" compoundref="d4/da7/_d_i_o___private_8h" startline="33">PORTD</references>
+      </memberdef>
+      <memberdef kind="function" id="d2/d61/_d_i_o___interface_8h_1a99868633da4de20e958133342a983929" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 DIO_u8ConfigPullupBit</definition>
+        <argsstring>(u8 u8Reg, u8 u8Bit, u8 u8PullUpResStatus)</argsstring>
+        <name>DIO_u8ConfigPullupBit</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Bit</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8PullUpResStatus</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d2/d61/_d_i_o___interface_8h_1a99868633da4de20e958133342a983929" kindref="member">DIO_u8ConfigPullupBit(u8 u8Reg,u8 u8Bit,u8 u8PullUpResStatus)</ref>; Description : Configure pullup Res status for on a given bit and port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register : takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PD2.... </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8PullUpResStatus</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pull up res : takes only DIO_EN_PULL_UP_RES or DIO_DIS_PULL_UP_RES </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range, (3) means pull up resistor status value out of range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Interface.h" line="224" column="4" bodyfile="MCAL/DIO/DIO_Program.c" bodystart="404" bodyend="439" declfile="MCAL/DIO/DIO_Interface.h" declline="224" declcolumn="4"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afcd60341eda5d397be2c49b9e53d248b" compoundref="d2/d61/_d_i_o___interface_8h" startline="21">DIO_DIS_PULL_UP_RES</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1ab63eed3b7e5edffda0bd2ba2961e3f4a" compoundref="d2/d61/_d_i_o___interface_8h" startline="20">DIO_EN_PULL_UP_RES</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" compoundref="d2/d61/_d_i_o___interface_8h" startline="32">DIO_PORTA</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" compoundref="d2/d61/_d_i_o___interface_8h" startline="33">DIO_PORTB</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" compoundref="d2/d61/_d_i_o___interface_8h" startline="34">DIO_PORTC</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" compoundref="d2/d61/_d_i_o___interface_8h" startline="35">DIO_PORTD</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a7c8a7f98a98d8cb125dd57a66720ab30" compoundref="d4/da7/_d_i_o___private_8h" startline="17">PORTA</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a09a0c85cd3da09d9cdf63a5ac4c39f77" compoundref="d4/da7/_d_i_o___private_8h" startline="22">PORTB</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a68fea88642279a70246e026e7221b0a5" compoundref="d4/da7/_d_i_o___private_8h" startline="28">PORTC</references>
+        <references refid="d4/da7/_d_i_o___private_8h_1a3e6a2517db4f9cb7c9037adf0aefe79b" compoundref="d4/da7/_d_i_o___private_8h" startline="33">PORTD</references>
+        <references refid="d7/dca/_s_t_d___m_a_c_r_o_s_8h_1a3c980171dff030311d0794c2de93f754" compoundref="d7/dca/_s_t_d___m_a_c_r_o_s_8h" startline="66">SET_BIT_VALUE</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>File<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>DIO_Interface.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Description<sp/>:<sp/>This<sp/>interface<sp/>file<sp/>includes<sp/>DIO<sp/>Driver<sp/>prototypes<sp/>and<sp/>difinitions<sp/>for<sp/>Atmega32</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Mohamed<sp/>reda<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>18/4/2022</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Git<sp/>account<sp/>:<sp/>https://github.com/mhmdreda99</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>mail<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>dev.mhmdreda99@gmail.com</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__DIO_Interface_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__DIO_Interface_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../LIB/STD_TYPES.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../LIB/STD_MACROS.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*==============================================================================================================================================</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>macros<sp/>used<sp/>with<sp/>I/O</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*==============================================================================================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="d2/d61/_d_i_o___interface_8h_1ab63eed3b7e5edffda0bd2ba2961e3f4a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_EN_PULL_UP_RES<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="d2/d61/_d_i_o___interface_8h_1afcd60341eda5d397be2c49b9e53d248b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_DIS_PULL_UP_RES<sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d2/d61/_d_i_o___interface_8h_1a648ee6476ac405a3803d4927c6160b71" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_OUTPUT<sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="d2/d61/_d_i_o___interface_8h_1afb70917ae68732d1dbd6bd120b6c757a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_INPUT<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="d2/d61/_d_i_o___interface_8h_1a8bc63994a481798464caf18cd08b6c45" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_HIGH<sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d2/d61/_d_i_o___interface_8h_1a199d8c89f64de45151ce89e33e1ae558" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_LOW<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="d2/d61/_d_i_o___interface_8h_1afdbf33121323dbcbb7927257feaae015" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_ON<sp/><sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d2/d61/_d_i_o___interface_8h_1a62465f8098d6cc213621e0ec525f83ce" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_OFF<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">/*define<sp/>ports*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="d2/d61/_d_i_o___interface_8h_1a4b38640fcd311cd16664527481143b50" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PORTA<sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d2/d61/_d_i_o___interface_8h_1a5fda09bb4be080473eef07c69494ee3d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PORTB<sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d2/d61/_d_i_o___interface_8h_1afd0fd698e348c4df3af5b2083d36e4b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PORTC<sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d2/d61/_d_i_o___interface_8h_1aa9a7a59399a2b2d2bae3053b2a8db0c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PORTD<sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">/*PORTA<sp/>PINS*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="d2/d61/_d_i_o___interface_8h_1a64201dce635547e424829c2696ade343" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PA0<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="d2/d61/_d_i_o___interface_8h_1aae63aeb4c9920fb19e95b884c9048701" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PA1<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="d2/d61/_d_i_o___interface_8h_1a20669a508f4b3676f14e4137a6cf6372" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PA2<sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="d2/d61/_d_i_o___interface_8h_1acef1558fd56dfd84b8a073ff86e8eb94" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PA3<sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="d2/d61/_d_i_o___interface_8h_1af4a95128c20b507637a9671d79a4eb32" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PA4<sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="d2/d61/_d_i_o___interface_8h_1ab56b85b8a6c24aeebcc5710054d591dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PA5<sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="d2/d61/_d_i_o___interface_8h_1a464da0354f55f025013b991d6d00955f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PA6<sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="d2/d61/_d_i_o___interface_8h_1a3806712cbb1320ed2a6215b234941786" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PA7<sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">/*PORTB<sp/>PINS*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="d2/d61/_d_i_o___interface_8h_1a2713c4bdbf0221c8dec4a74483eab05b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PB0<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="d2/d61/_d_i_o___interface_8h_1a8de118c5b1e0a5f5b2f3312019085025" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PB1<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="d2/d61/_d_i_o___interface_8h_1a407105607c4e62f53d583a76a65fb54f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PB2<sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="d2/d61/_d_i_o___interface_8h_1a63e6f4e729fe5be17979cb9a3e9fe194" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PB3<sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="d2/d61/_d_i_o___interface_8h_1ac398468970aae6e11be226a852c85d79" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PB4<sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="d2/d61/_d_i_o___interface_8h_1a16d043553e2d46ad54b5b4238b8212df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PB5<sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="d2/d61/_d_i_o___interface_8h_1aa5b5961350b87951465986ad8da567f9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PB6<sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="d2/d61/_d_i_o___interface_8h_1a7e0b434ed6890b6a017b3a5e8b88512f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PB7<sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">/*PORTC<sp/>PINS*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="d2/d61/_d_i_o___interface_8h_1a28e1493995ba5e8c904e57174a8a5069" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PC0<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="d2/d61/_d_i_o___interface_8h_1a2006f5ac1678c63a9bcaf3b552971a16" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PC1<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d2/d61/_d_i_o___interface_8h_1ab6acb4c5773e58a522ac1e1b6c88582d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PC2<sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="d2/d61/_d_i_o___interface_8h_1a803d4a272d1263c9d5acdefa862ca6b6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PC3<sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="d2/d61/_d_i_o___interface_8h_1a6dd1b2c975486320c056ff1e37262f95" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PC4<sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="d2/d61/_d_i_o___interface_8h_1a704d0d0c0b06c0061e5fd656e6ba3f7b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PC5<sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="d2/d61/_d_i_o___interface_8h_1a9102408228abbe6e38ef8cd4461969dd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PC6<sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="d2/d61/_d_i_o___interface_8h_1a61001a2a0d8eceaa46c8580397ea87dc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PC7<sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">/*PORTD<sp/>PINS*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="d2/d61/_d_i_o___interface_8h_1a51c8058512b5e1c0ca55dbd665c76054" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PD0<sp/><sp/><sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="d2/d61/_d_i_o___interface_8h_1afca6880a47250454e093cb906c716047" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PD1<sp/><sp/><sp/><sp/><sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="d2/d61/_d_i_o___interface_8h_1ae9e758d7aa80ba1f4e74bd7e1ce431f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PD2<sp/><sp/><sp/><sp/><sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="d2/d61/_d_i_o___interface_8h_1a2d67db1da53217e8c43bff0ead57ec2b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PD3<sp/><sp/><sp/><sp/><sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="d2/d61/_d_i_o___interface_8h_1ad24d149b4423d6e4bb7bd6031ffe021c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PD4<sp/><sp/><sp/><sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="d2/d61/_d_i_o___interface_8h_1a45ed4d8379a5bade19e0160fab3f79e3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PD5<sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="d2/d61/_d_i_o___interface_8h_1a54aae9756fc18bf6d72fe94ae5774953" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PD6<sp/><sp/><sp/><sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="d2/d61/_d_i_o___interface_8h_1ad1713f58faaf70e9acf51a3dfbeb81c6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIO_PD7<sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">/*==============================================================================================================================================</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>Direction<sp/>modules</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*==============================================================================================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1a838f198cf45e2184ad898310a0d113d2" kindref="member">DIO_u8SetDirectionReg</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Status);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1a70816d064e56daeac2ba114ae81539d0" kindref="member">DIO_u8SetDirectionBit</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Bit,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Status);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">/*==============================================================================================================================================</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/>*<sp/>Write<sp/>modules</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/>*==============================================================================================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1afebdfc3bad8fdab9fbdbfe955f3f445e" kindref="member">DIO_u8WriteReg</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Value);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1abec487182046db105087ba55742a889b" kindref="member">DIO_u8WriteBit</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Bit,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Value);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1a875e3058c52455441e3f18efe84198e5" kindref="member">DIO_u8ToggleReg</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1aac4bffaf9e068e9511de8c6d9d23f0c5" kindref="member">DIO_u8ToggleBit</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Bit);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">/*==============================================================================================================================================</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/>*<sp/>Read<sp/>modules</highlight></codeline>
+<codeline lineno="164"><highlight class="comment"><sp/>*==============================================================================================================================================</highlight></codeline>
+<codeline lineno="165"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1ad0847f023453f32f17083d31a18b6f76" kindref="member">DIO_u8ReadReg</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1a28a770cb1da696f96103fd3fecaa11ef" kindref="member">DIO_u8ReadBit</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Bit);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">/*==============================================================================================================================================</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"><sp/>*<sp/>enable<sp/>pullup<sp/>res<sp/>modules</highlight></codeline>
+<codeline lineno="194"><highlight class="comment"><sp/>*==============================================================================================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1aaceca9396540e142783e248fe1c114c9" kindref="member">DIO_u8ConfigPullupReg</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8PullUpResStatus);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1a99868633da4de20e958133342a983929" kindref="member">DIO_u8ConfigPullupBit</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Bit,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8PullUpResStatus);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="MCAL/DIO/DIO_Interface.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,538 @@
+.TH "MCAL/DIO/DIO_Interface.h" 3 "Thu Apr 21 2022" "Version 1.0" "STOPWATCH" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+MCAL/DIO/DIO_Interface.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include '\&.\&./\&.\&./LIB/STD_TYPES\&.h'\fP
+.br
+\fC#include '\&.\&./\&.\&./LIB/STD_MACROS\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBDIO_EN_PULL_UP_RES\fP   1"
+.br
+.ti -1c
+.RI "#define \fBDIO_DIS_PULL_UP_RES\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDIO_OUTPUT\fP   1"
+.br
+.ti -1c
+.RI "#define \fBDIO_INPUT\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDIO_HIGH\fP   1"
+.br
+.ti -1c
+.RI "#define \fBDIO_LOW\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDIO_ON\fP   1"
+.br
+.ti -1c
+.RI "#define \fBDIO_OFF\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDIO_PORTA\fP   1"
+.br
+.ti -1c
+.RI "#define \fBDIO_PORTB\fP   2"
+.br
+.ti -1c
+.RI "#define \fBDIO_PORTC\fP   3"
+.br
+.ti -1c
+.RI "#define \fBDIO_PORTD\fP   4"
+.br
+.ti -1c
+.RI "#define \fBDIO_PA0\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDIO_PA1\fP   1"
+.br
+.ti -1c
+.RI "#define \fBDIO_PA2\fP   2"
+.br
+.ti -1c
+.RI "#define \fBDIO_PA3\fP   3"
+.br
+.ti -1c
+.RI "#define \fBDIO_PA4\fP   4"
+.br
+.ti -1c
+.RI "#define \fBDIO_PA5\fP   5"
+.br
+.ti -1c
+.RI "#define \fBDIO_PA6\fP   6"
+.br
+.ti -1c
+.RI "#define \fBDIO_PA7\fP   7"
+.br
+.ti -1c
+.RI "#define \fBDIO_PB0\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDIO_PB1\fP   1"
+.br
+.ti -1c
+.RI "#define \fBDIO_PB2\fP   2"
+.br
+.ti -1c
+.RI "#define \fBDIO_PB3\fP   3"
+.br
+.ti -1c
+.RI "#define \fBDIO_PB4\fP   4"
+.br
+.ti -1c
+.RI "#define \fBDIO_PB5\fP   5"
+.br
+.ti -1c
+.RI "#define \fBDIO_PB6\fP   6"
+.br
+.ti -1c
+.RI "#define \fBDIO_PB7\fP   7"
+.br
+.ti -1c
+.RI "#define \fBDIO_PC0\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDIO_PC1\fP   1"
+.br
+.ti -1c
+.RI "#define \fBDIO_PC2\fP   2"
+.br
+.ti -1c
+.RI "#define \fBDIO_PC3\fP   3"
+.br
+.ti -1c
+.RI "#define \fBDIO_PC4\fP   4"
+.br
+.ti -1c
+.RI "#define \fBDIO_PC5\fP   5"
+.br
+.ti -1c
+.RI "#define \fBDIO_PC6\fP   6"
+.br
+.ti -1c
+.RI "#define \fBDIO_PC7\fP   7"
+.br
+.ti -1c
+.RI "#define \fBDIO_PD0\fP   0"
+.br
+.ti -1c
+.RI "#define \fBDIO_PD1\fP   1"
+.br
+.ti -1c
+.RI "#define \fBDIO_PD2\fP   2"
+.br
+.ti -1c
+.RI "#define \fBDIO_PD3\fP   3"
+.br
+.ti -1c
+.RI "#define \fBDIO_PD4\fP   4"
+.br
+.ti -1c
+.RI "#define \fBDIO_PD5\fP   5"
+.br
+.ti -1c
+.RI "#define \fBDIO_PD6\fP   6"
+.br
+.ti -1c
+.RI "#define \fBDIO_PD7\fP   7"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBu8\fP \fBDIO_u8SetDirectionReg\fP (\fBu8\fP u8Reg, \fBu8\fP u8Status)"
+.br
+.RI "Prototype : u8 \fBDIO_u8SetDirectionReg(u8 u8Reg,u8 u8Status)\fP; Description : Set direction of the whole register\&. "
+.ti -1c
+.RI "\fBu8\fP \fBDIO_u8SetDirectionBit\fP (\fBu8\fP u8Reg, \fBu8\fP u8Bit, \fBu8\fP u8Status)"
+.br
+.RI "Prototype : u8 \fBDIO_u8SetDirectionBit(u8 u8Reg,u8 u8Bit,u8 u8Status)\fP; Description : Set direction of one bit of the register\&. "
+.ti -1c
+.RI "\fBu8\fP \fBDIO_u8WriteReg\fP (\fBu8\fP u8Reg, \fBu8\fP u8Value)"
+.br
+.RI "Prototype : u8 \fBDIO_u8WriteReg(u8 u8Reg,u8 u8Value)\fP; Description : write o/p to the whole register\&. "
+.ti -1c
+.RI "\fBu8\fP \fBDIO_u8WriteBit\fP (\fBu8\fP u8Reg, \fBu8\fP u8Bit, \fBu8\fP u8Value)"
+.br
+.RI "Prototype : u8 \fBDIO_u8WriteBit(u8 u8Reg,u8 u8Bit,u8 u8Value)\fP; Description : Write value of one bit of the register\&. "
+.ti -1c
+.RI "\fBu8\fP \fBDIO_u8ToggleReg\fP (\fBu8\fP u8Reg)"
+.br
+.RI "Prototype : u8 \fBDIO_u8ToggleReg(u8 u8Reg)\fP; Description : Toggles pin values of the whole register\&. "
+.ti -1c
+.RI "\fBu8\fP \fBDIO_u8ToggleBit\fP (\fBu8\fP u8Reg, \fBu8\fP u8Bit)"
+.br
+.RI "Prototype : u8 \fBDIO_u8ToggleBit(u8 u8Reg,u8 u8Bit)\fP; Description : Toggle pin value of one bit of the register\&. "
+.ti -1c
+.RI "\fBu8\fP \fBDIO_u8ReadReg\fP (\fBu8\fP u8Reg)"
+.br
+.RI "Prototype : u8 \fBDIO_u8ReadReg(u8 u8Reg)\fP; Description : Read i/p of the whole register\&. "
+.ti -1c
+.RI "\fBu8\fP \fBDIO_u8ReadBit\fP (\fBu8\fP u8Reg, \fBu8\fP u8Bit)"
+.br
+.RI "Prototype : u8 \fBDIO_u8ReadBit(u8 u8Reg,u8 u8Bit)\fP; Description : Read pin value of one bit of the register\&. "
+.ti -1c
+.RI "\fBu8\fP \fBDIO_u8ConfigPullupReg\fP (\fBu8\fP u8Reg, \fBu8\fP u8PullUpResStatus)"
+.br
+.RI "Prototype : u8 \fBDIO_u8ConfigPullupReg(u8 u8Reg,u8 u8PullUpResStatus)\fP; Description : Configure pullup Res status for the whole register\&. "
+.ti -1c
+.RI "\fBu8\fP \fBDIO_u8ConfigPullupBit\fP (\fBu8\fP u8Reg, \fBu8\fP u8Bit, \fBu8\fP u8PullUpResStatus)"
+.br
+.RI "Prototype : u8 \fBDIO_u8ConfigPullupBit(u8 u8Reg,u8 u8Bit,u8 u8PullUpResStatus)\fP; Description : Configure pullup Res status for on a given bit and port\&. "
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define DIO_DIS_PULL_UP_RES   0"
+
+.SS "#define DIO_EN_PULL_UP_RES   1"
+
+.SS "#define DIO_HIGH   1"
+
+.SS "#define DIO_INPUT   0"
+
+.SS "#define DIO_LOW   0"
+
+.SS "#define DIO_OFF   0"
+
+.SS "#define DIO_ON   1"
+
+.SS "#define DIO_OUTPUT   1"
+
+.SS "#define DIO_PA0   0"
+
+.SS "#define DIO_PA1   1"
+
+.SS "#define DIO_PA2   2"
+
+.SS "#define DIO_PA3   3"
+
+.SS "#define DIO_PA4   4"
+
+.SS "#define DIO_PA5   5"
+
+.SS "#define DIO_PA6   6"
+
+.SS "#define DIO_PA7   7"
+
+.SS "#define DIO_PB0   0"
+
+.SS "#define DIO_PB1   1"
+
+.SS "#define DIO_PB2   2"
+
+.SS "#define DIO_PB3   3"
+
+.SS "#define DIO_PB4   4"
+
+.SS "#define DIO_PB5   5"
+
+.SS "#define DIO_PB6   6"
+
+.SS "#define DIO_PB7   7"
+
+.SS "#define DIO_PC0   0"
+
+.SS "#define DIO_PC1   1"
+
+.SS "#define DIO_PC2   2"
+
+.SS "#define DIO_PC3   3"
+
+.SS "#define DIO_PC4   4"
+
+.SS "#define DIO_PC5   5"
+
+.SS "#define DIO_PC6   6"
+
+.SS "#define DIO_PC7   7"
+
+.SS "#define DIO_PD0   0"
+
+.SS "#define DIO_PD1   1"
+
+.SS "#define DIO_PD2   2"
+
+.SS "#define DIO_PD3   3"
+
+.SS "#define DIO_PD4   4"
+
+.SS "#define DIO_PD5   5"
+
+.SS "#define DIO_PD6   6"
+
+.SS "#define DIO_PD7   7"
+
+.SS "#define DIO_PORTA   1"
+
+.SS "#define DIO_PORTB   2"
+
+.SS "#define DIO_PORTC   3"
+
+.SS "#define DIO_PORTD   4"
+
+.SH "Function Documentation"
+.PP 
+.SS "\fBu8\fP DIO_u8ConfigPullupBit (\fBu8\fP u8Reg, \fBu8\fP u8Bit, \fBu8\fP u8PullUpResStatus)"
+
+.PP
+Prototype : u8 \fBDIO_u8ConfigPullupBit(u8 u8Reg,u8 u8Bit,u8 u8PullUpResStatus)\fP; Description : Configure pullup Res status for on a given bit and port\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register : takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.br
+\fIu8Bit\fP Bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PD2\&.\&.\&.\&. 
+.br
+\fIu8PullUpResStatus\fP pull up res : takes only DIO_EN_PULL_UP_RES or DIO_DIS_PULL_UP_RES 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range, (3) means pull up resistor status value out of range 
+.RE
+.PP
+
+.SS "\fBu8\fP DIO_u8ConfigPullupReg (\fBu8\fP u8Reg, \fBu8\fP u8PullUpResStatus)"
+
+.PP
+Prototype : u8 \fBDIO_u8ConfigPullupReg(u8 u8Reg,u8 u8PullUpResStatus)\fP; Description : Configure pullup Res status for the whole register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register : takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.br
+\fIu8PullUpResStatus\fP pull up res : takes only DIO_EN_PULL_UP_RES (will enable it for the whole reg) or DIO_DIS_PULL_UP_RES (will disable it for the whole reg) or a custom value 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument 
+.RE
+.PP
+
+.SS "\fBu8\fP DIO_u8ReadBit (\fBu8\fP u8Reg, \fBu8\fP u8Bit)"
+
+.PP
+Prototype : u8 \fBDIO_u8ReadBit(u8 u8Reg,u8 u8Bit)\fP; Description : Read pin value of one bit of the register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.br
+\fIu8Bit\fP Bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2\&.\&.\&.\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 u8 actual reading (0 or 1) or number used for error handling (2) means Undefined PORT Argument, (3) means Bit number out of range 
+.RE
+.PP
+
+.SS "\fBu8\fP DIO_u8ReadReg (\fBu8\fP u8Reg)"
+
+.PP
+Prototype : u8 \fBDIO_u8ReadReg(u8 u8Reg)\fP; Description : Read i/p of the whole register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 Register reading of type u8, it will always return 240(0xAA)(0b10101010) in case of Undefined Port error whatever the actual reading is
+.RE
+.PP
+Prototype : u8 \fBDIO_u8ReadReg(u8 u8Reg)\fP; Description : Read i/p of the whole register\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.br
+\fIu8Bit\fP Bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2\&.\&.\&.\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 u8 actual reading (0 or 1) or number used for error handling (2) means Undefined PORT Argument, (3) means Bit number out of range 
+.RE
+.PP
+
+.SS "\fBu8\fP DIO_u8SetDirectionBit (\fBu8\fP u8Reg, \fBu8\fP u8Bit, \fBu8\fP u8Status)"
+
+.PP
+Prototype : u8 \fBDIO_u8SetDirectionBit(u8 u8Reg,u8 u8Bit,u8 u8Status)\fP; Description : Set direction of one bit of the register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.br
+\fIu8Bit\fP bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2\&.\&.\&.\&. 
+.br
+\fIu8Status\fP Status : takes only INPUT,OUTPUT 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range, (3) means status value out of range 
+.RE
+.PP
+
+.SS "\fBu8\fP DIO_u8SetDirectionReg (\fBu8\fP u8Reg, \fBu8\fP u8Status)"
+
+.PP
+Prototype : u8 \fBDIO_u8SetDirectionReg(u8 u8Reg,u8 u8Status)\fP; Description : Set direction of the whole register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP : Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.br
+\fIu8Status\fP Status : takes INPUT sets whole reg i/p,OUTPUT sets whole reg o/p, or Custom -(0-255)values- DDRx values 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 : u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument 
+.RE
+.PP
+
+.SS "\fBu8\fP DIO_u8ToggleBit (\fBu8\fP u8Reg, \fBu8\fP u8Bit)"
+
+.PP
+Prototype : u8 \fBDIO_u8ToggleBit(u8 u8Reg,u8 u8Bit)\fP; Description : Toggle pin value of one bit of the register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.br
+\fIu8Bit\fP Bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2\&.\&.\&.\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range
+.RE
+.PP
+Prototype : u8 \fBDIO_u8ToggleBit(u8 u8Reg,u8 u8Bit)\fP; Description : Toggle pin value of one bit of the register\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 Register reading of type u8, it will always return 240(0xAA)(0b10101010) in case of Undefined Port error whatever the actual reading is 
+.RE
+.PP
+
+.SS "\fBu8\fP DIO_u8ToggleReg (\fBu8\fP u8Reg)"
+
+.PP
+Prototype : u8 \fBDIO_u8ToggleReg(u8 u8Reg)\fP; Description : Toggles pin values of the whole register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument
+.RE
+.PP
+Prototype : u8 \fBDIO_u8ToggleReg(u8 u8Reg)\fP; Description : Toggles pin values of the whole register\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.br
+\fIu8Bit\fP Bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2\&.\&.\&.\&. 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range 
+.RE
+.PP
+
+.SS "\fBu8\fP DIO_u8WriteBit (\fBu8\fP u8Reg, \fBu8\fP u8Bit, \fBu8\fP u8Value)"
+
+.PP
+Prototype : u8 \fBDIO_u8WriteBit(u8 u8Reg,u8 u8Bit,u8 u8Value)\fP; Description : Write value of one bit of the register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.br
+\fIu8Bit\fP bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2\&.\&.\&.\&. 
+.br
+\fIu8Value\fP Value : takes only HIGH,LOW 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range, (3) means Bit value out of range
+.RE
+.PP
+Prototype : u8 \fBDIO_u8WriteBit(u8 u8Reg,u8 u8Bit,u8 u8Value)\fP; Description : Write value of one bit of the register\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument 
+.RE
+.PP
+
+.SS "\fBu8\fP DIO_u8WriteReg (\fBu8\fP u8Reg, \fBu8\fP u8Value)"
+
+.PP
+Prototype : u8 \fBDIO_u8WriteReg(u8 u8Reg,u8 u8Value)\fP; Description : write o/p to the whole register\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.br
+\fIu8Value\fP Value : takes HIGH sets whole reg high,LOW sets whole reg low, or Custom -(0-255)values- PORTx values 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 : number used for error handling (0) means no error,(1) means Undefined PORT Argument
+.RE
+.PP
+Prototype : u8 \fBDIO_u8WriteReg(u8 u8Reg,u8 u8Value)\fP; Description : write o/p to the whole register\&.
+.PP
+\fBParameters\fP
+.RS 4
+\fIu8Reg\fP Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD 
+.br
+\fIu8Bit\fP bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2\&.\&.\&.\&. 
+.br
+\fIu8Value\fP Value : takes only HIGH,LOW 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range, (3) means Bit value out of range 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for STOPWATCH from the source code\&.
