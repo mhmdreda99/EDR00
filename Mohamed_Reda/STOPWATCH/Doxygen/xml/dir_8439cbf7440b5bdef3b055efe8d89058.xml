@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="dir_8439cbf7440b5bdef3b055efe8d89058" kind="dir">
+    <compoundname>MCAL/DIO</compoundname>
+    <innerfile refid="d2/d61/_d_i_o___interface_8h">DIO_Interface.h</innerfile>
+    <innerfile refid="d4/da7/_d_i_o___private_8h">DIO_Private.h</innerfile>
+    <innerfile refid="dd/dfd/_d_i_o___program_8c">DIO_Program.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="MCAL/DIO/"/>
+  </compounddef>
+</doxygen>

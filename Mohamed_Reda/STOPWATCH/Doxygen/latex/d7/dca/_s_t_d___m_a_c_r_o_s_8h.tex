@@ -1,0 +1,82 @@
+\hypertarget{_s_t_d___m_a_c_r_o_s_8h}{}\doxysection{L\+I\+B/\+S\+T\+D\+\_\+\+M\+A\+C\+R\+OS.h File Reference}
+\label{_s_t_d___m_a_c_r_o_s_8h}\index{LIB/STD\_MACROS.h@{LIB/STD\_MACROS.h}}
+This graph shows which files directly or indirectly include this file\+:
+% FIG 0
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a75582c7b79f6d462e04e49ef63c33795}{S\+E\+T\+\_\+\+B\+IT}}(R\+EG,  B\+I\+T\+\_\+\+N\+UM)~((R\+EG)$\vert$=(1$<$$<$(B\+I\+T\+\_\+\+N\+UM)))
+\item 
+\#define \mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a07262b5e9cc7ce7a2e55f1c157e99a13}{C\+L\+E\+A\+R\+\_\+\+B\+IT}}(R\+EG,  B\+I\+T\+\_\+\+N\+UM)~((R\+EG)\&=($\sim$(1$<$$<$(B\+I\+T\+\_\+\+N\+UM))))
+\item 
+\#define \mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a92554b11b0ee688137d1d18d7b1aebbb}{T\+O\+G\+G\+L\+E\+\_\+\+B\+IT}}(R\+EG,  B\+I\+T\+\_\+\+N\+UM)~((R\+EG)$^\wedge$=(1$<$$<$(B\+I\+T\+\_\+\+N\+UM)))
+\item 
+\#define \mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_ac9767b66a8de270e7eb51c24e404325b}{G\+E\+T\+\_\+\+B\+IT}}(R\+EG,  B\+I\+T\+\_\+\+N\+UM)~((R\+EG)$>$$>$(B\+I\+T\+\_\+\+N\+UM))\&(0\+X01)
+\item 
+\#define \mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a172351c00c3552c083f665fc3b440a4c}{I\+S\+\_\+\+B\+I\+T\+\_\+\+S\+ET}}(R\+EG,  B\+I\+T\+\_\+\+N\+UM)~((R\+EG)   \&  (1$<$$<$ B\+I\+T\+\_\+\+N\+UM))
+\item 
+\#define \mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a53b5b65f6dde6f8319cbf3556cf376f4}{I\+S\+\_\+\+B\+I\+T\+\_\+\+C\+L\+E\+AR}}(R\+EG,  B\+I\+T\+\_\+\+N\+UM)~(!(\mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a172351c00c3552c083f665fc3b440a4c}{I\+S\+\_\+\+B\+I\+T\+\_\+\+S\+ET}}(R\+EG,B\+I\+T\+\_\+\+N\+UM)))
+\item 
+\#define \mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a6a203659ae1d198f05feb3f9f987013d}{V\+AL}}~1
+\item 
+\#define \mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a4548569297db62be86076b8f494138a7}{B\+I\+T\+C\+A\+L\+C\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+\+B\+IT}}(R\+EG,  B\+I\+T\+\_\+\+N\+UM,  \mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a6a203659ae1d198f05feb3f9f987013d}{V\+AL}})~R\+EG=((R\+EG)\&($\sim$(1$<$$<$(B\+I\+T\+\_\+\+N\+UM))))$\vert$(\mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a6a203659ae1d198f05feb3f9f987013d}{V\+AL}}$<$$<$(B\+I\+T\+\_\+\+N\+UM))
+\item 
+\#define \mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a3c980171dff030311d0794c2de93f754}{S\+E\+T\+\_\+\+B\+I\+T\+\_\+\+V\+A\+L\+UE}}(R\+EG,  B\+IT,  Value)~( (Value == 0) ? ( R\+EG \&= $\sim$(1$<$$<$B\+IT) ) \+: ( R\+EG $\vert$= (1$<$$<$B\+IT) ) )
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_s_t_d___m_a_c_r_o_s_8h_a4548569297db62be86076b8f494138a7}\label{_s_t_d___m_a_c_r_o_s_8h_a4548569297db62be86076b8f494138a7}} 
+\index{STD\_MACROS.h@{STD\_MACROS.h}!BITCALC\_ASSIGN\_BIT@{BITCALC\_ASSIGN\_BIT}}
+\index{BITCALC\_ASSIGN\_BIT@{BITCALC\_ASSIGN\_BIT}!STD\_MACROS.h@{STD\_MACROS.h}}
+\doxysubsubsection{\texorpdfstring{BITCALC\_ASSIGN\_BIT}{BITCALC\_ASSIGN\_BIT}}
+{\footnotesize\ttfamily \#define B\+I\+T\+C\+A\+L\+C\+\_\+\+A\+S\+S\+I\+G\+N\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+I\+T\+\_\+\+N\+UM,  }\item[{}]{\mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a6a203659ae1d198f05feb3f9f987013d}{V\+AL}} }\end{DoxyParamCaption})~R\+EG=((R\+EG)\&($\sim$(1$<$$<$(B\+I\+T\+\_\+\+N\+UM))))$\vert$(\mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a6a203659ae1d198f05feb3f9f987013d}{V\+AL}}$<$$<$(B\+I\+T\+\_\+\+N\+UM))}
+
+\mbox{\Hypertarget{_s_t_d___m_a_c_r_o_s_8h_a07262b5e9cc7ce7a2e55f1c157e99a13}\label{_s_t_d___m_a_c_r_o_s_8h_a07262b5e9cc7ce7a2e55f1c157e99a13}} 
+\index{STD\_MACROS.h@{STD\_MACROS.h}!CLEAR\_BIT@{CLEAR\_BIT}}
+\index{CLEAR\_BIT@{CLEAR\_BIT}!STD\_MACROS.h@{STD\_MACROS.h}}
+\doxysubsubsection{\texorpdfstring{CLEAR\_BIT}{CLEAR\_BIT}}
+{\footnotesize\ttfamily \#define C\+L\+E\+A\+R\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+I\+T\+\_\+\+N\+UM }\end{DoxyParamCaption})~((R\+EG)\&=($\sim$(1$<$$<$(B\+I\+T\+\_\+\+N\+UM))))}
+
+\mbox{\Hypertarget{_s_t_d___m_a_c_r_o_s_8h_ac9767b66a8de270e7eb51c24e404325b}\label{_s_t_d___m_a_c_r_o_s_8h_ac9767b66a8de270e7eb51c24e404325b}} 
+\index{STD\_MACROS.h@{STD\_MACROS.h}!GET\_BIT@{GET\_BIT}}
+\index{GET\_BIT@{GET\_BIT}!STD\_MACROS.h@{STD\_MACROS.h}}
+\doxysubsubsection{\texorpdfstring{GET\_BIT}{GET\_BIT}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+I\+T\+\_\+\+N\+UM }\end{DoxyParamCaption})~((R\+EG)$>$$>$(B\+I\+T\+\_\+\+N\+UM))\&(0\+X01)}
+
+\mbox{\Hypertarget{_s_t_d___m_a_c_r_o_s_8h_a53b5b65f6dde6f8319cbf3556cf376f4}\label{_s_t_d___m_a_c_r_o_s_8h_a53b5b65f6dde6f8319cbf3556cf376f4}} 
+\index{STD\_MACROS.h@{STD\_MACROS.h}!IS\_BIT\_CLEAR@{IS\_BIT\_CLEAR}}
+\index{IS\_BIT\_CLEAR@{IS\_BIT\_CLEAR}!STD\_MACROS.h@{STD\_MACROS.h}}
+\doxysubsubsection{\texorpdfstring{IS\_BIT\_CLEAR}{IS\_BIT\_CLEAR}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+B\+I\+T\+\_\+\+C\+L\+E\+AR(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+I\+T\+\_\+\+N\+UM }\end{DoxyParamCaption})~(!(\mbox{\hyperlink{_s_t_d___m_a_c_r_o_s_8h_a172351c00c3552c083f665fc3b440a4c}{I\+S\+\_\+\+B\+I\+T\+\_\+\+S\+ET}}(R\+EG,B\+I\+T\+\_\+\+N\+UM)))}
+
+\mbox{\Hypertarget{_s_t_d___m_a_c_r_o_s_8h_a172351c00c3552c083f665fc3b440a4c}\label{_s_t_d___m_a_c_r_o_s_8h_a172351c00c3552c083f665fc3b440a4c}} 
+\index{STD\_MACROS.h@{STD\_MACROS.h}!IS\_BIT\_SET@{IS\_BIT\_SET}}
+\index{IS\_BIT\_SET@{IS\_BIT\_SET}!STD\_MACROS.h@{STD\_MACROS.h}}
+\doxysubsubsection{\texorpdfstring{IS\_BIT\_SET}{IS\_BIT\_SET}}
+{\footnotesize\ttfamily \#define I\+S\+\_\+\+B\+I\+T\+\_\+\+S\+ET(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+I\+T\+\_\+\+N\+UM }\end{DoxyParamCaption})~((R\+EG)   \&  (1$<$$<$ B\+I\+T\+\_\+\+N\+UM))}
+
+\mbox{\Hypertarget{_s_t_d___m_a_c_r_o_s_8h_a75582c7b79f6d462e04e49ef63c33795}\label{_s_t_d___m_a_c_r_o_s_8h_a75582c7b79f6d462e04e49ef63c33795}} 
+\index{STD\_MACROS.h@{STD\_MACROS.h}!SET\_BIT@{SET\_BIT}}
+\index{SET\_BIT@{SET\_BIT}!STD\_MACROS.h@{STD\_MACROS.h}}
+\doxysubsubsection{\texorpdfstring{SET\_BIT}{SET\_BIT}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+I\+T\+\_\+\+N\+UM }\end{DoxyParamCaption})~((R\+EG)$\vert$=(1$<$$<$(B\+I\+T\+\_\+\+N\+UM)))}
+
+\mbox{\Hypertarget{_s_t_d___m_a_c_r_o_s_8h_a3c980171dff030311d0794c2de93f754}\label{_s_t_d___m_a_c_r_o_s_8h_a3c980171dff030311d0794c2de93f754}} 
+\index{STD\_MACROS.h@{STD\_MACROS.h}!SET\_BIT\_VALUE@{SET\_BIT\_VALUE}}
+\index{SET\_BIT\_VALUE@{SET\_BIT\_VALUE}!STD\_MACROS.h@{STD\_MACROS.h}}
+\doxysubsubsection{\texorpdfstring{SET\_BIT\_VALUE}{SET\_BIT\_VALUE}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+B\+I\+T\+\_\+\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+IT,  }\item[{}]{Value }\end{DoxyParamCaption})~( (Value == 0) ? ( R\+EG \&= $\sim$(1$<$$<$B\+IT) ) \+: ( R\+EG $\vert$= (1$<$$<$B\+IT) ) )}
+
+\mbox{\Hypertarget{_s_t_d___m_a_c_r_o_s_8h_a92554b11b0ee688137d1d18d7b1aebbb}\label{_s_t_d___m_a_c_r_o_s_8h_a92554b11b0ee688137d1d18d7b1aebbb}} 
+\index{STD\_MACROS.h@{STD\_MACROS.h}!TOGGLE\_BIT@{TOGGLE\_BIT}}
+\index{TOGGLE\_BIT@{TOGGLE\_BIT}!STD\_MACROS.h@{STD\_MACROS.h}}
+\doxysubsubsection{\texorpdfstring{TOGGLE\_BIT}{TOGGLE\_BIT}}
+{\footnotesize\ttfamily \#define T\+O\+G\+G\+L\+E\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+I\+T\+\_\+\+N\+UM }\end{DoxyParamCaption})~((R\+EG)$^\wedge$=(1$<$$<$(B\+I\+T\+\_\+\+N\+UM)))}
+
+\mbox{\Hypertarget{_s_t_d___m_a_c_r_o_s_8h_a6a203659ae1d198f05feb3f9f987013d}\label{_s_t_d___m_a_c_r_o_s_8h_a6a203659ae1d198f05feb3f9f987013d}} 
+\index{STD\_MACROS.h@{STD\_MACROS.h}!VAL@{VAL}}
+\index{VAL@{VAL}!STD\_MACROS.h@{STD\_MACROS.h}}
+\doxysubsubsection{\texorpdfstring{VAL}{VAL}}
+{\footnotesize\ttfamily \#define V\+AL~1}
+

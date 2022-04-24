@@ -1,0 +1,10 @@
+digraph "LED_u8LedStringOnOff"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="LED_u8LedStringOnOff",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Prototype : u8 LED_u8LedStringOnOff(u8 u8Reg,u8 u8Value); Description : Turn string of 8 Leds on and ..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="DIO_u8WriteReg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d61/_d_i_o___interface_8h.html#afebdfc3bad8fdab9fbdbfe955f3f445e",tooltip="Prototype : u8 DIO_u8WriteReg(u8 u8Reg,u8 u8Value); Description : write o/p to the whole register."];
+}

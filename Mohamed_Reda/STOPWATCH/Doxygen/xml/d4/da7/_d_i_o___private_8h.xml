@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="d4/da7/_d_i_o___private_8h" kind="file" language="C++">
+    <compoundname>DIO_Private.h</compoundname>
+    <includedby refid="dd/dfd/_d_i_o___program_8c" local="yes">MCAL/DIO/DIO_Program.c</includedby>
+    <invincdepgraph>
+      <node id="1">
+        <label>MCAL/DIO/DIO_Private.h</label>
+        <link refid="d4/da7/_d_i_o___private_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MCAL/DIO/DIO_Program.c</label>
+        <link refid="dd/dfd/_d_i_o___program_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1a7c8a7f98a98d8cb125dd57a66720ab30" prot="public" static="no">
+        <name>PORTA</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x3B)) /*PORTA Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="17" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1ada011c5bf95ab91774eee5c29b45fd06" prot="public" static="no">
+        <name>DDRA</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x3A)) /*DDRA  Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="18" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1aa5b59706bf235bbd1936ae801f125507" prot="public" static="no">
+        <name>PINA</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x39)) /*PINA  Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="19" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1a09a0c85cd3da09d9cdf63a5ac4c39f77" prot="public" static="no">
+        <name>PORTB</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x38)) /*PORTB Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="22" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1a924a54df722121bc98383bdec5ae1898" prot="public" static="no">
+        <name>DDRB</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x37)) /*DDRB  Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="23" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1a49f0e8289e962c02128f24b94d7aea7c" prot="public" static="no">
+        <name>PINB</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x36)) /*PINB  Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="24" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1a68fea88642279a70246e026e7221b0a5" prot="public" static="no">
+        <name>PORTC</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x35)) /*PORTC Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="28" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1a13004c90aa4b54f1bc3fbd25ad3fd645" prot="public" static="no">
+        <name>DDRC</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x34)) /*DDRC  Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="29" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1a0545e73dc7ae14b1f62293c1feba3983" prot="public" static="no">
+        <name>PINC</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x33)) /*PINC  Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="30" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1a3e6a2517db4f9cb7c9037adf0aefe79b" prot="public" static="no">
+        <name>PORTD</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x32)) /*PORTD Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="33" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1ae24189eeb3ce4bccd97d46e88f494e0a" prot="public" static="no">
+        <name>DDRD</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x31)) /*DDRD  Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="34" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="d4/da7/_d_i_o___private_8h_1a50997bc44119b844ceaab463c564bfb7" prot="public" static="no">
+        <name>PIND</name>
+        <initializer>(*(volatile <ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref> *)(0x30)) /*PIND  Macro Definition*/</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="MCAL/DIO/DIO_Private.h" line="35" column="9" bodyfile="MCAL/DIO/DIO_Private.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>File<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>DIO_Private.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Description<sp/>:<sp/>This<sp/>File<sp/>includes<sp/>DIO<sp/>Driver<sp/>private<sp/>macros<sp/>and<sp/>declarations<sp/>for<sp/>Atmega32</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Mohamed<sp/>reda<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>18/4/2022</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Git<sp/>account<sp/>:<sp/>https://github.com/mhmdreda99</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>mail<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>dev.mhmdreda99@gmail.com</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__DIO_Private_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__DIO_Private_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*DIO<sp/>Registers<sp/>macros*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*PORTA*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="17" refid="d4/da7/_d_i_o___private_8h_1a7c8a7f98a98d8cb125dd57a66720ab30" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PORTA<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x3B))<sp/></highlight><highlight class="comment">/*PORTA<sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="d4/da7/_d_i_o___private_8h_1ada011c5bf95ab91774eee5c29b45fd06" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DDRA<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x3A))<sp/></highlight><highlight class="comment">/*DDRA<sp/><sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d4/da7/_d_i_o___private_8h_1aa5b59706bf235bbd1936ae801f125507" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PINA<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x39))<sp/></highlight><highlight class="comment">/*PINA<sp/><sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">/*PORTB*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="d4/da7/_d_i_o___private_8h_1a09a0c85cd3da09d9cdf63a5ac4c39f77" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PORTB<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x38))<sp/></highlight><highlight class="comment">/*PORTB<sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="d4/da7/_d_i_o___private_8h_1a924a54df722121bc98383bdec5ae1898" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DDRB<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x37))<sp/></highlight><highlight class="comment">/*DDRB<sp/><sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="d4/da7/_d_i_o___private_8h_1a49f0e8289e962c02128f24b94d7aea7c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PINB<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x36))<sp/></highlight><highlight class="comment">/*PINB<sp/><sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*PORTC*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="d4/da7/_d_i_o___private_8h_1a68fea88642279a70246e026e7221b0a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PORTC<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x35))<sp/></highlight><highlight class="comment">/*PORTC<sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="d4/da7/_d_i_o___private_8h_1a13004c90aa4b54f1bc3fbd25ad3fd645" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DDRC<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x34))<sp/></highlight><highlight class="comment">/*DDRC<sp/><sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="d4/da7/_d_i_o___private_8h_1a0545e73dc7ae14b1f62293c1feba3983" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PINC<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x33))<sp/></highlight><highlight class="comment">/*PINC<sp/><sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*PORTD*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="d4/da7/_d_i_o___private_8h_1a3e6a2517db4f9cb7c9037adf0aefe79b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PORTD<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x32))<sp/></highlight><highlight class="comment">/*PORTD<sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="d4/da7/_d_i_o___private_8h_1ae24189eeb3ce4bccd97d46e88f494e0a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DDRD<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x31))<sp/></highlight><highlight class="comment">/*DDRD<sp/><sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="d4/da7/_d_i_o___private_8h_1a50997bc44119b844ceaab463c564bfb7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIND<sp/><sp/>(*(volatile<sp/>u8<sp/>*)(0x30))<sp/></highlight><highlight class="comment">/*PIND<sp/><sp/>Macro<sp/>Definition*/</highlight><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="MCAL/DIO/DIO_Private.h"/>
+  </compounddef>
+</doxygen>
