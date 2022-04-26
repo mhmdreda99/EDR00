@@ -15,9 +15,13 @@
 	void vector(void)
 
 
-//Interrupt Vectors of external interrupts
+//External Interrupts Interrupt Vectors
 #define INT0_Vect		__vector_1
 #define INT1_Vect		__vector_2
 #define INT2_Vect		__vector_3
+
+//ADC Interrupt Vector
+#define ADC_Vect			__vector_16
+
 
 #endif /* SERVICE_INTERRUPT_VECTOR_H_ */
