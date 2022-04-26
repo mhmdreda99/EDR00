@@ -33,7 +33,7 @@ void DIO_init(void)
     CLEAR_BIT(SFIOR,PUD);
 }
 
-STD_Return DIO_SetPinDirection(DIO_Ports PORT, u8 PIN, DIO_Direction Direction)
+STD_Return DIO_SetPinDirection(DIO_Ports_t PORT, u8 PIN, DIO_Direction_t Direction)
 	{
 		// check for safety
 		if(PIN>MAX_PinNum)
@@ -103,7 +103,7 @@ STD_Return DIO_SetPinDirection(DIO_Ports PORT, u8 PIN, DIO_Direction Direction)
 	return E_NOK;
 	}
 
-STD_Return DIO_SetPortDirection(DIO_Ports PORT,u8 Direction)
+STD_Return DIO_SetPortDirection(DIO_Ports_t PORT,DIO_Direction_t Direction)
 {
 					switch(PORT)
 						{
@@ -126,7 +126,7 @@ STD_Return DIO_SetPortDirection(DIO_Ports PORT,u8 Direction)
 	return E_NOK;
 }
 
-STD_Return DIO_SetPinValue(DIO_Ports PORT,u8 PIN,DIO_State State)
+STD_Return DIO_SetPinValue(DIO_Ports_t PORT,u8 PIN,DIO_State_t State)
 	{
 		if(PIN>MAX_PinNum)
 			{
@@ -195,7 +195,7 @@ STD_Return DIO_SetPinValue(DIO_Ports PORT,u8 PIN,DIO_State State)
 		return E_NOK;
 	}
 
-STD_Return DIO_SetPortValue(DIO_Ports PORT,u8 value)
+STD_Return DIO_SetPortValue(DIO_Ports_t PORT,u8 value)
 {
 					switch(PORT)
 						{
@@ -219,7 +219,7 @@ STD_Return DIO_SetPortValue(DIO_Ports PORT,u8 value)
 	return E_NOK;
 }
 
-STD_Return DIO_GetPinValue(DIO_Ports PORT,u8 PIN,DIO_State* State)
+STD_Return DIO_GetPinValue(DIO_Ports_t PORT,u8 PIN,DIO_State_t* State)
 	{
 		if(PIN>MAX_PinNum)
 			{
@@ -248,7 +248,7 @@ STD_Return DIO_GetPinValue(DIO_Ports PORT,u8 PIN,DIO_State* State)
 		return E_NOK;
 	}
 
-STD_Return DIO_togglePin(DIO_Ports port,u8 pin)
+STD_Return DIO_togglePin(DIO_Ports_t port,u8 pin)
  {
 	if (pin > MAX_PinNum)
 		{
@@ -278,7 +278,7 @@ STD_Return DIO_togglePin(DIO_Ports port,u8 pin)
 	return E_NOK;
 }
 
-STD_Return DIO_EnablePullup(DIO_Ports PORT, u8 PIN, DIO_PullUpState Pullstate)
+STD_Return DIO_EnablePullup(DIO_Ports_t PORT, u8 PIN, DIO_PullUpState_t Pullstate)
 	{
 		if(PIN>MAX_PinNum)
 			{

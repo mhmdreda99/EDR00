@@ -31,42 +31,42 @@ typedef enum
 		DIO_PORTB,
 		DIO_PORTC,
 		DIO_PORTD
-	} DIO_Ports;
+	} DIO_Ports_t;
 //Direction
 typedef enum
 	{
 		DIO_INPUT,
 		DIO_OUTPUT
-	} DIO_Direction;
+	} DIO_Direction_t;
 
 //Value
 typedef enum
 	{
 		DIO_LOW,
 		DIO_HIGH
-	} DIO_State;
+	} DIO_State_t;
 typedef enum
 	{
 		ENABLE_PullUp,
 		DISABLE_PullUp
-	}DIO_PullUpState;
+	}DIO_PullUpState_t;
 //return_type
 
 
 void DIO_init(void);
 
-STD_Return DIO_SetPinDirection(DIO_Ports PORT, u8 PIN, DIO_Direction Direction); //DDR for single pin
+STD_Return DIO_SetPinDirection(DIO_Ports_t PORT, u8 PIN, DIO_Direction_t Direction); //DDR for single pin
 
-STD_Return DIO_SetPortDirection(DIO_Ports PORT,DIO_Direction Direction);	   //DDR for All port
+STD_Return DIO_SetPortDirection(DIO_Ports_t PORT,DIO_Direction_t Direction);	   //DDR for All port
 
-STD_Return DIO_SetPinValue(DIO_Ports PORT,u8 PIN,DIO_State State);		   // for pin value
+STD_Return DIO_SetPinValue(DIO_Ports_t PORT,u8 PIN,DIO_State_t State);		   // for pin value
 
-STD_Return DIO_SetPortValue(DIO_Ports PORT,DIO_State State);	           //for port value
+STD_Return DIO_SetPortValue(DIO_Ports_t PORT,u8 value);	           //for port value
 
-STD_Return DIO_GetPinValue(DIO_Ports PORT,u8 PIN,DIO_State* State);        //for store pin value using pointer
+STD_Return DIO_GetPinValue(DIO_Ports_t PORT,u8 PIN,DIO_State_t* State);        //for store pin value using pointer
 
-STD_Return DIO_togglePin(DIO_Ports port,u8 pin);
+STD_Return DIO_togglePin(DIO_Ports_t port,u8 pin);
 
-STD_Return DIO_EnablePullup(DIO_Ports port, u8 pin, DIO_PullUpState Pullstate); //to activate PullUp resistor
+STD_Return DIO_EnablePullup(DIO_Ports_t port, u8 pin, DIO_PullUpState_t Pullstate); //to activate PullUp resistor
 
 #endif /* DIO_INTERFACE_H_ */
