@@ -7,7 +7,7 @@
 
 #include "SevenSegment.h"
 
-STD_Return SevenSegment_Display(DIO_Ports PORT,SevenSegment_Type TYPE,Display_Number NUM)
+STD_Return SevenSegment_Display(DIO_Ports_t PORT,SevenSegment_Type TYPE,Display_Number NUM)
 {
 	switch(PORT)
 	{

@@ -9,8 +9,7 @@
 #include "LCD_Config.h"
 #include <stdio.h>
 #include <util/delay.h>
-
-
+#include <stdlib.h>
 void CLCD_init(void)
 {
 	//Initialize LCD pins direction
@@ -67,13 +66,11 @@ void CLCD_SendData(u8 Data)
 	DIO_SetPinValue(CLCD_ControlPort,CLCD_E_PIN,DIO_LOW);
 }
 
-void CLCD_SendWord(const u8 *Word_PTR)
+void CLCD_SendWord(u8 *Word_PTR)
 {
-	u8 counter=0;
-	while((Word_PTR[counter])!='\0') 		//Word = String = array of charaters
+	while(*Word_PTR) 		//Word = String = array of charaters
 	{
-		CLCD_SendData(Word_PTR[counter]);
-		counter++;
+		CLCD_SendData(*Word_PTR++);
 	}
 }
 
@@ -114,31 +111,50 @@ void CLCD_SendSpecialChar(u8 *Pattern,u8 BlockNumber,u8 X_Position,u8 Y_Position
 	CLCD_SendData(BlockNumber);
 }
 
-void CLCD_display_Decimal_Number (u8 Number)
+void CLCD_Display_Decimal_Number(s32 num)
 {
+	u8 i = 0, j, digit, str[10];
 
-	u8  str[7]; //array pointer where the result will be stored
+	/* if number 0 */
+	if (0 == num)
+	{
+		CLCD_SendData('0');
+	}
 
-	sprintf((u8*) str,"%d",Number);
+	/* if the number is negative */
+	if (num < 0)
+	{
+		CLCD_SendData('-');
 
-	CLCD_SendWord((u8*) str);
+		/* convert to positive form */
+		num = num * -1;
+	}
 
+	/* loop on digits of the number */
+	while (num > 0)
+	{
+		digit = (num % 10) + '0';
+		str[i] = digit;
+		num /= 10;
+		i++;
+	}
+
+	/* print str on LCD */
+	for (j = i; j > 0; j--)
+	{
+		CLCD_SendData(str[j - 1]);
+	}
 }
-
-void CLCD_display_Real_Number(f64 Number)
+void CLCD_Display_RealNumber(f32 num)
 {
-	u8  str[16];
-
-	char *TempSign = (Number < 0) ? "-" : "";
-	f32 TempValue = (Number < 0) ? -Number : Number;
-
-	u8 TempInt1 = TempValue;                  		  // Get the integer (678).
-	f32 TempFraction_1 = TempValue - TempInt1;      // Get fraction (0.0123).
-	u8 TempInt2 = TempFraction_1 * 10000;  		  // Turn into integer (123).
-
-	// Print as parts, note that you need 0-padding for fractional bit.
-	sprintf ((u8*) str, "%s%d.%04d", (u8*) TempSign, TempInt1, TempInt2);
-
-	CLCD_SendWord((u8*) str) ;
-
+	//Left number to the decimal point
+	s32 left = (s32)num;
+	//calculation to the Right number to the decimal point
+	u8 right = (f32)(num - left) * 100;
+	//Display Left number to the decimal point
+	CLCD_Display_Decimal_Number(left);
+	//Display the decimal point
+	CLCD_SendData('.');
+	//Display the Right number to the decimal point
+	CLCD_Display_Decimal_Number(right);
 }

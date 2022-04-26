@@ -48,9 +48,9 @@
 void CLCD_init(void);
 void CLCD_SendCommand(u8 command);
 void CLCD_SendData(u8 Data);
-void CLCD_SendWord(const u8 *Arr_PTR);
+void CLCD_SendWord(u8 *Arr_PTR);
 STD_Return CLCD_GoToXY(u8 X_Position,u8 Y_Position);
 void CLCD_SendSpecialChar(u8 *Pattern,u8 BlockNumber,u8 X_Position,u8 Y_Position);
-void CLCD_display_Decimal_Number(u8 Number);
-void CLCD_display_Real_Number(f64 Number);
+void CLCD_Display_Decimal_Number(s32 num);
+void CLCD_Display_RealNumber(f32 num);
 #endif /* HAL_LCD_LCD_H_ */
