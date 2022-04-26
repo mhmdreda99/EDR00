@@ -28,25 +28,24 @@ ISR(INT2_Vect)
 	(*External_Function2)();
 }
 
-STD_Return External_EnableInterrupt(Interrupt_State state)
+STD_Return Enable_Global_Interrupt(Interrupt_State_t state)
 {
 	switch(state)
 		{
 			case Enable_Interrupt:
 				SET_BIT(SREG,GIE);
-				return E_NOK;
 				break;
 			case Disable_Interrupt:
 				CLEAR_BIT(SREG,GIE);
-				return E_NOK;
 				break;
 			default:
 				return E_OK;
 		}
+	return E_NOK;
 }
 
 //Interrupt_No1
-STD_Return External_Int0(Int_Sense_Control SenseLevel)
+STD_Return External_Int0(Int_Sense_Control_t SenseLevel)
 {
 	SET_BIT(GICR,INT0);
 
@@ -55,24 +54,24 @@ STD_Return External_Int0(Int_Sense_Control SenseLevel)
 			case Rising_Edge_Sense:
 					SET_BIT(MCUCR,ISC00);
 					SET_BIT(MCUCR,ISC01);
-					return E_NOK;
 					break;
 			case Falling_Edge_Sense:
 					CLEAR_BIT(MCUCR,ISC00);
 					SET_BIT(MCUCR,ISC01);
-					return E_NOK;
 					break;
 			default:
 				return E_OK;
 		}
+	return E_NOK;
 }
-void CallBack_Int0(void (*Func_Ptr0)(void))
+STD_Return CallBack_Int0(void (*Func_Ptr)(void))
 {
-	External_Function0=Func_Ptr0;
+	External_Function0=Func_Ptr;
+	return E_NOK;
 }
 
 //Interrupt_No2
-STD_Return External_Int1(Int_Sense_Control SenseLevel)
+STD_Return External_Int1(Int_Sense_Control_t SenseLevel)
 {
 	SET_BIT(GICR,INT1);
 
@@ -91,15 +90,17 @@ STD_Return External_Int1(Int_Sense_Control SenseLevel)
 			default:
 				return E_OK;
 		}
+	return E_NOK;
 }
 
-void CallBack_Int1(void (*Func_Ptr1)(void))
+STD_Return CallBack_Int1(void (*Func_Ptr)(void))
 {
-	External_Function1=Func_Ptr1;
+	External_Function1=Func_Ptr;
+	return E_NOK;
 }
 
 //Interrupt_No3
-STD_Return External_Int2(Int_Sense_Control SenseLevel)
+STD_Return External_Int2(Int_Sense_Control_t SenseLevel)
 {
 	SET_BIT(GICR,INT2);
 
@@ -116,8 +117,11 @@ STD_Return External_Int2(Int_Sense_Control SenseLevel)
 			default:
 				return E_OK;
 		}
+	return E_NOK;
+
 }
-void CallBack_Int2(void (*Func_Ptr2)(void))
+STD_Return CallBack_Int2(void (*Func_Ptr)(void))
 {
-	External_Function2=Func_Ptr2;
+	External_Function2=Func_Ptr;
+	return E_NOK;
 }
