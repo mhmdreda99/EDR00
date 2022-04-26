@@ -1,0 +1,11 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "std_macros.h": "c",
+        "led_interface.h": "c",
+        "std_types.h": "c",
+        "led_private.h": "c",
+        "dio_interface.h": "c"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}

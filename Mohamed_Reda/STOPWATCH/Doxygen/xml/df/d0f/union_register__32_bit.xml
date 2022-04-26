@@ -1,0 +1,524 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="df/d0f/union_register__32_bit" kind="union" language="C++" prot="public">
+    <compoundname>Register_32Bit</compoundname>
+    <includes refid="d1/de4/_s_t_d___t_y_p_e_s_8h" local="no">STD_TYPES.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a1904853c1506a35121d5e64a074e93fa" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit0</definition>
+        <argsstring></argsstring>
+        <name>Bit0</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="59" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a4c399b8e2d5882155ca724b6dfa1678f" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit1</definition>
+        <argsstring></argsstring>
+        <name>Bit1</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="60" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1aecff84434f94f173d2d960703e125bdf" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit2</definition>
+        <argsstring></argsstring>
+        <name>Bit2</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="61" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a583c9ef96be6ae5c68ec32858de52fed" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit3</definition>
+        <argsstring></argsstring>
+        <name>Bit3</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="62" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a5cb960f51ada54780e6c7ff23c3e18e3" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit4</definition>
+        <argsstring></argsstring>
+        <name>Bit4</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="63" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a28c14761da6c6e4705881f4397bab852" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit5</definition>
+        <argsstring></argsstring>
+        <name>Bit5</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="64" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a8790594479ce128bdcf373572a1d60b1" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit6</definition>
+        <argsstring></argsstring>
+        <name>Bit6</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="65" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1ad9df89f7dd73bad33bb577d3ee940c94" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit7</definition>
+        <argsstring></argsstring>
+        <name>Bit7</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="66" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a3e829e01575a0c7c7aa848f1e61a81fc" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit8</definition>
+        <argsstring></argsstring>
+        <name>Bit8</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="67" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a5a9b6143f15eddc6118bf5fe7685dcf5" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit9</definition>
+        <argsstring></argsstring>
+        <name>Bit9</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="68" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a556f21eecd9100821495ee6c5df0ab11" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit10</definition>
+        <argsstring></argsstring>
+        <name>Bit10</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="69" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a7f3ec8e8a6f385f560eeb3d164b691ec" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit11</definition>
+        <argsstring></argsstring>
+        <name>Bit11</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="70" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a80dd71ed30d0af5b49d148b11d28b9ab" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit12</definition>
+        <argsstring></argsstring>
+        <name>Bit12</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="71" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a2b96e2a012624f49a0c048d1d0c76388" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit13</definition>
+        <argsstring></argsstring>
+        <name>Bit13</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="72" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1ae54c5c110830b77be72d099ca7adea37" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit14</definition>
+        <argsstring></argsstring>
+        <name>Bit14</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="73" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a15a5d0f2e23d511c5ff3b91f862087d8" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit15</definition>
+        <argsstring></argsstring>
+        <name>Bit15</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="74" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a7d39ac8f5a80abbbb507970f0c49cbb7" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit16</definition>
+        <argsstring></argsstring>
+        <name>Bit16</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="75" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a741c477e2d1a4eb3836de7301a8cdc90" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit17</definition>
+        <argsstring></argsstring>
+        <name>Bit17</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="76" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1af308374265b6074fdade0cac0a3c6530" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit18</definition>
+        <argsstring></argsstring>
+        <name>Bit18</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="77" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a29255708dc3d0a745006c20a8adb7679" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit19</definition>
+        <argsstring></argsstring>
+        <name>Bit19</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="78" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a52f211bfac59c0d8f5d8c318bf5a83d3" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit20</definition>
+        <argsstring></argsstring>
+        <name>Bit20</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="79" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1ad791f0186de0843ef29297ea03c05d7d" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit21</definition>
+        <argsstring></argsstring>
+        <name>Bit21</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="80" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a8cf84bf4eb7b8de5a1063c495ff54fe2" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit22</definition>
+        <argsstring></argsstring>
+        <name>Bit22</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="81" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a499b80998f84b6a2fd2ce30f457fe192" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit23</definition>
+        <argsstring></argsstring>
+        <name>Bit23</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="82" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1aaf0bc5af7f793194f29d45afda5c120d" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit24</definition>
+        <argsstring></argsstring>
+        <name>Bit24</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="83" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a2e0e9948cba6a1688d3a3d5389f95f56" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit25</definition>
+        <argsstring></argsstring>
+        <name>Bit25</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="84" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a23d5f8b4832a97ecf70928340f0297a8" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit26</definition>
+        <argsstring></argsstring>
+        <name>Bit26</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="85" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1ae2626ec25b91a9b1851ee8b8d6eeb29f" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit27</definition>
+        <argsstring></argsstring>
+        <name>Bit27</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="86" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a1e24459ec4f0b98405beabb9f4f9b7e0" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit28</definition>
+        <argsstring></argsstring>
+        <name>Bit28</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="87" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1aa0a6c8d1d72ce43c728567266f2edf70" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit29</definition>
+        <argsstring></argsstring>
+        <name>Bit29</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="88" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a3a63323ef1aed21eb5078a862d304eef" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit30</definition>
+        <argsstring></argsstring>
+        <name>Bit30</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="89" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a4fed1278ff8439c2a0ecd02914fe43d5" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 Register_32Bit::Bit31</definition>
+        <argsstring></argsstring>
+        <name>Bit31</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="90" column="4" bodyfile="LIB/STD_TYPES.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1a5d7377e70dccd2b5220ae817e065d5d8" prot="public" static="no" mutable="no">
+        <type>struct Register_32Bit::@0</type>
+        <definition>struct Register_32Bit::@0 Register_32Bit::BitAccess</definition>
+        <argsstring></argsstring>
+        <name>BitAccess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="91" column="10"/>
+      </memberdef>
+      <memberdef kind="variable" id="df/d0f/union_register__32_bit_1aec5a1a7090708e54ccd65cfd1d2f55e0" prot="public" static="no" mutable="no">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1a0ceed739f3b2b55ee8d4d2a79a82cdea" kindref="member">u32</ref></type>
+        <definition>u32 Register_32Bit::FourByteAccess</definition>
+        <argsstring></argsstring>
+        <name>FourByteAccess</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="LIB/STD_TYPES.h" line="92" column="5" bodyfile="LIB/STD_TYPES.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="LIB/STD_TYPES.h" line="56" column="15" bodyfile="LIB/STD_TYPES.h" bodystart="56" bodyend="93"/>
+    <listofallmembers>
+      <member refid="df/d0f/union_register__32_bit_1a1904853c1506a35121d5e64a074e93fa" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit0</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a4c399b8e2d5882155ca724b6dfa1678f" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit1</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a556f21eecd9100821495ee6c5df0ab11" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit10</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a7f3ec8e8a6f385f560eeb3d164b691ec" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit11</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a80dd71ed30d0af5b49d148b11d28b9ab" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit12</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a2b96e2a012624f49a0c048d1d0c76388" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit13</name></member>
+      <member refid="df/d0f/union_register__32_bit_1ae54c5c110830b77be72d099ca7adea37" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit14</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a15a5d0f2e23d511c5ff3b91f862087d8" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit15</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a7d39ac8f5a80abbbb507970f0c49cbb7" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit16</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a741c477e2d1a4eb3836de7301a8cdc90" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit17</name></member>
+      <member refid="df/d0f/union_register__32_bit_1af308374265b6074fdade0cac0a3c6530" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit18</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a29255708dc3d0a745006c20a8adb7679" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit19</name></member>
+      <member refid="df/d0f/union_register__32_bit_1aecff84434f94f173d2d960703e125bdf" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit2</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a52f211bfac59c0d8f5d8c318bf5a83d3" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit20</name></member>
+      <member refid="df/d0f/union_register__32_bit_1ad791f0186de0843ef29297ea03c05d7d" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit21</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a8cf84bf4eb7b8de5a1063c495ff54fe2" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit22</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a499b80998f84b6a2fd2ce30f457fe192" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit23</name></member>
+      <member refid="df/d0f/union_register__32_bit_1aaf0bc5af7f793194f29d45afda5c120d" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit24</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a2e0e9948cba6a1688d3a3d5389f95f56" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit25</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a23d5f8b4832a97ecf70928340f0297a8" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit26</name></member>
+      <member refid="df/d0f/union_register__32_bit_1ae2626ec25b91a9b1851ee8b8d6eeb29f" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit27</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a1e24459ec4f0b98405beabb9f4f9b7e0" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit28</name></member>
+      <member refid="df/d0f/union_register__32_bit_1aa0a6c8d1d72ce43c728567266f2edf70" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit29</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a583c9ef96be6ae5c68ec32858de52fed" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit3</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a3a63323ef1aed21eb5078a862d304eef" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit30</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a4fed1278ff8439c2a0ecd02914fe43d5" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit31</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a5cb960f51ada54780e6c7ff23c3e18e3" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit4</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a28c14761da6c6e4705881f4397bab852" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit5</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a8790594479ce128bdcf373572a1d60b1" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit6</name></member>
+      <member refid="df/d0f/union_register__32_bit_1ad9df89f7dd73bad33bb577d3ee940c94" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit7</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a3e829e01575a0c7c7aa848f1e61a81fc" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit8</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a5a9b6143f15eddc6118bf5fe7685dcf5" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>Bit9</name></member>
+      <member refid="df/d0f/union_register__32_bit_1a5d7377e70dccd2b5220ae817e065d5d8" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>BitAccess</name></member>
+      <member refid="df/d0f/union_register__32_bit_1aec5a1a7090708e54ccd65cfd1d2f55e0" prot="public" virt="non-virtual"><scope>Register_32Bit</scope><name>FourByteAccess</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="d0/dcc/_l_e_d___program_8c" kind="file" language="C++">
+    <compoundname>LED_Program.c</compoundname>
+    <includes refid="d1/de4/_s_t_d___t_y_p_e_s_8h" local="yes">../../LIB/STD_TYPES.h</includes>
+    <includes refid="d7/dca/_s_t_d___m_a_c_r_o_s_8h" local="yes">../../LIB/STD_MACROS.h</includes>
+    <includes refid="d2/d61/_d_i_o___interface_8h" local="yes">../../MCAL/DIO/DIO_Interface.h</includes>
+    <includes refid="d6/df1/_l_e_d___private_8h" local="yes">LED_Private.h</includes>
+    <includes refid="df/de9/_l_e_d___interface_8h" local="yes">LED_Interface.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>LED_Private.h</label>
+        <link refid="d6/df1/_l_e_d___private_8h"/>
+      </node>
+      <node id="2">
+        <label>../../LIB/STD_TYPES.h</label>
+        <link refid="d1/de4/_s_t_d___t_y_p_e_s_8h"/>
+      </node>
+      <node id="3">
+        <label>../../LIB/STD_MACROS.h</label>
+        <link refid="d7/dca/_s_t_d___m_a_c_r_o_s_8h"/>
+      </node>
+      <node id="6">
+        <label>LED_Interface.h</label>
+        <link refid="df/de9/_l_e_d___interface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>HAL/LED/LED_Program.c</label>
+        <link refid="d0/dcc/_l_e_d___program_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>../../MCAL/DIO/DIO_Interface.h</label>
+        <link refid="d2/d61/_d_i_o___interface_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="d0/dcc/_l_e_d___program_8c_1a124d7b272265642d8862bac29889c6cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 LED_u8InitOneLed</definition>
+        <argsstring>(u8 u8Reg, u8 u8Bit)</argsstring>
+        <name>LED_u8InitOneLed</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Bit</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d0/dcc/_l_e_d___program_8c_1a124d7b272265642d8862bac29889c6cb" kindref="member">LED_u8InitOneLed(u8 u8Reg,u8 u8Bit)</ref>; Description : Initialize one LED on specific port and bit. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2.... </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HAL/LED/LED_Program.c" line="26" column="4" bodyfile="HAL/LED/LED_Program.c" bodystart="26" bodyend="31"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a648ee6476ac405a3803d4927c6160b71" compoundref="d2/d61/_d_i_o___interface_8h" startline="23">DIO_OUTPUT</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a70816d064e56daeac2ba114ae81539d0" compoundref="dd/dfd/_d_i_o___program_8c" startline="75" endline="110">DIO_u8SetDirectionBit</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/dcc/_l_e_d___program_8c_1ad1ed5dca8591a65e65833dce0b91cad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 LED_u8InitLedString</definition>
+        <argsstring>(u8 u8Reg)</argsstring>
+        <name>LED_u8InitLedString</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d0/dcc/_l_e_d___program_8c_1ad1ed5dca8591a65e65833dce0b91cad6" kindref="member">LED_u8InitLedString(u8 u8Reg)</ref>; Description : Initialize string of 8 LEDs on specific port. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HAL/LED/LED_Program.c" line="42" column="4" bodyfile="HAL/LED/LED_Program.c" bodystart="42" bodyend="47"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a648ee6476ac405a3803d4927c6160b71" compoundref="d2/d61/_d_i_o___interface_8h" startline="23">DIO_OUTPUT</references>
+        <references refid="d2/d61/_d_i_o___interface_8h_1a838f198cf45e2184ad898310a0d113d2" compoundref="dd/dfd/_d_i_o___program_8c" startline="29" endline="63">DIO_u8SetDirectionReg</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/dcc/_l_e_d___program_8c_1ae7cd24c548de0fba7e413393a7a5cad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 LED_u8LedOnOff</definition>
+        <argsstring>(u8 u8Reg, u8 u8Bit, u8 u8State)</argsstring>
+        <name>LED_u8LedOnOff</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Bit</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8State</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d0/dcc/_l_e_d___program_8c_1ae7cd24c548de0fba7e413393a7a5cad6" kindref="member">LED_u8LedOnOff(u8 u8Reg,u8 u8Bit,u8 u8State)</ref>; Description : Turn one Led on and off. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Bit</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>bit : takes only DIO_Px0,DIO_Px1,DIO_Px2,DIO_Px3,DIO_Px4,DIO_Px5,DIO_Px6,DIO_Px7 ex: DIO_PA0,DIO_PB6,DIO_PD2.... </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8State</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>State : takes only ON OFF </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument, (2) means Bit number out of range, (3) means Bit value out of range </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HAL/LED/LED_Program.c" line="60" column="4" bodyfile="HAL/LED/LED_Program.c" bodystart="60" bodyend="65"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1abec487182046db105087ba55742a889b" compoundref="dd/dfd/_d_i_o___program_8c" startline="174" endline="209">DIO_u8WriteBit</references>
+      </memberdef>
+      <memberdef kind="function" id="d0/dcc/_l_e_d___program_8c_1a62eb98cadd1d1ecaaff812d254ffcb49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+        <definition>u8 LED_u8LedStringOnOff</definition>
+        <argsstring>(u8 u8Reg, u8 u8Value)</argsstring>
+        <name>LED_u8LedStringOnOff</name>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Reg</declname>
+        </param>
+        <param>
+          <type><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref></type>
+          <declname>u8Value</declname>
+        </param>
+        <briefdescription>
+<para>Prototype : u8 <ref refid="d0/dcc/_l_e_d___program_8c_1a62eb98cadd1d1ecaaff812d254ffcb49" kindref="member">LED_u8LedStringOnOff(u8 u8Reg,u8 u8Value)</ref>; Description : Turn string of 8 Leds on and off. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>u8Reg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Register: takes only DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>u8Value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Value : takes only ON OFF or custom value </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>u8 number used for error handling (0) means no error,(1) means Undefined PORT Argument </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="HAL/LED/LED_Program.c" line="77" column="4" bodyfile="HAL/LED/LED_Program.c" bodystart="77" bodyend="82"/>
+        <references refid="d2/d61/_d_i_o___interface_8h_1afebdfc3bad8fdab9fbdbfe955f3f445e" compoundref="dd/dfd/_d_i_o___program_8c" startline="127" endline="161">DIO_u8WriteReg</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>File<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>LED_Program.c</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Description<sp/>:<sp/>This<sp/>file<sp/>includes<sp/>LED<sp/>Driver<sp/>implementations<sp/>for<sp/>Atmega32</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Author<sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Mohamed<sp/>reda<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>Date<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>20/4/2022</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>Git<sp/>account<sp/>:<sp/>https://github.com/mhmdreda99</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>mail<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><sp/>dev.mhmdreda99@gmail.com</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../LIB/STD_TYPES.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../LIB/STD_MACROS.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;../../MCAL/DIO/DIO_Interface.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="d6/df1/_l_e_d___private_8h" kindref="compound">LED_Private.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="df/de9/_l_e_d___interface_8h" kindref="compound">LED_Interface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="d0/dcc/_l_e_d___program_8c_1a124d7b272265642d8862bac29889c6cb" refkind="member"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d0/dcc/_l_e_d___program_8c_1a124d7b272265642d8862bac29889c6cb" kindref="member">LED_u8InitOneLed</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Bit)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*initialize<sp/>desired<sp/>bit<sp/>as<sp/>putput<sp/>and<sp/>return<sp/>error<sp/>value*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1a70816d064e56daeac2ba114ae81539d0" kindref="member">DIO_u8SetDirectionBit</ref>(u8Reg,u8Bit,<ref refid="d2/d61/_d_i_o___interface_8h_1a648ee6476ac405a3803d4927c6160b71" kindref="member">DIO_OUTPUT</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight><highlight class="comment">/*end<sp/>of<sp/>LED_u8InitOneLed()*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="d0/dcc/_l_e_d___program_8c_1ad1ed5dca8591a65e65833dce0b91cad6" refkind="member"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d0/dcc/_l_e_d___program_8c_1ad1ed5dca8591a65e65833dce0b91cad6" kindref="member">LED_u8InitLedString</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*initialize<sp/>desired<sp/>port<sp/><sp/>as<sp/>output<sp/>and<sp/>return<sp/>error<sp/>value*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1a838f198cf45e2184ad898310a0d113d2" kindref="member">DIO_u8SetDirectionReg</ref>(u8Reg,<ref refid="d2/d61/_d_i_o___interface_8h_1a648ee6476ac405a3803d4927c6160b71" kindref="member">DIO_OUTPUT</ref>);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight><highlight class="comment">/*end<sp/>of<sp/>LED_u8InitLedString*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="d0/dcc/_l_e_d___program_8c_1ae7cd24c548de0fba7e413393a7a5cad6" refkind="member"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d0/dcc/_l_e_d___program_8c_1ae7cd24c548de0fba7e413393a7a5cad6" kindref="member">LED_u8LedOnOff</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Bit,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8State)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*write<sp/>led<sp/>value<sp/>on<sp/>desired<sp/>bit<sp/>and<sp/>return<sp/>error<sp/>value*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1abec487182046db105087ba55742a889b" kindref="member">DIO_u8WriteBit</ref>(u8Reg,u8Bit,u8State);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight><highlight class="comment">/*end<sp/>of<sp/>LED_u8LedOnOff*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="d0/dcc/_l_e_d___program_8c_1a62eb98cadd1d1ecaaff812d254ffcb49" refkind="member"><highlight class="normal"><ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/><ref refid="d0/dcc/_l_e_d___program_8c_1a62eb98cadd1d1ecaaff812d254ffcb49" kindref="member">LED_u8LedStringOnOff</ref>(<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Reg,<ref refid="d1/de4/_s_t_d___t_y_p_e_s_8h_1aed742c436da53c1080638ce6ef7d13de" kindref="member">u8</ref><sp/>u8Value)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*write<sp/>led<sp/>values<sp/>on<sp/>Register<sp/>and<sp/>return<sp/>error<sp/>value*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="d2/d61/_d_i_o___interface_8h_1afebdfc3bad8fdab9fbdbfe955f3f445e" kindref="member">DIO_u8WriteReg</ref>(u8Reg,u8Value);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight><highlight class="comment">/*end<sp/>of<sp/>LED_u8LedStringOnOff()*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="HAL/LED/LED_Program.c"/>
+  </compounddef>
+</doxygen>

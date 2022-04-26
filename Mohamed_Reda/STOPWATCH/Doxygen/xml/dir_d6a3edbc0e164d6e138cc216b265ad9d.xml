@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.16">
+  <compounddef id="dir_d6a3edbc0e164d6e138cc216b265ad9d" kind="dir">
+    <compoundname>HAL/SSD</compoundname>
+    <innerfile refid="d6/d8a/_s_s_d___interface_8h">SSD_Interface.h</innerfile>
+    <innerfile refid="d0/d28/_s_s_d___private_8h">SSD_Private.h</innerfile>
+    <innerfile refid="d4/dc8/_s_s_d___program_8c">SSD_Program.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="HAL/SSD/"/>
+  </compounddef>
+</doxygen>

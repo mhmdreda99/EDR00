@@ -1,0 +1,10 @@
+digraph "LED_u8InitLedString"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="LED_u8InitLedString",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Prototype : u8 LED_u8InitLedString(u8 u8Reg); Description : Initialize string of 8 LEDs on specific p..."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="DIO_u8SetDirectionReg",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$d2/d61/_d_i_o___interface_8h.html#a838f198cf45e2184ad898310a0d113d2",tooltip="Prototype : u8 DIO_u8SetDirectionReg(u8 u8Reg,u8 u8Status); Description : Set direction of the whole ..."];
+}
