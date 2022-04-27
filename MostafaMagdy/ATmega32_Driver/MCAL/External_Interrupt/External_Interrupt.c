@@ -28,7 +28,7 @@ ISR(INT2_Vect)
 	(*External_Function2)();
 }
 
-STD_Return Enable_Global_Interrupt(Interrupt_State state)
+STD_Return Enable_Global_Interrupt(Interrupt_State_t state)
 {
 	switch(state)
 		{
@@ -45,7 +45,7 @@ STD_Return Enable_Global_Interrupt(Interrupt_State state)
 }
 
 //Interrupt_No1
-STD_Return External_Int0(Int_Sense_Control SenseLevel)
+STD_Return External_Int0(Int_Sense_Control_t SenseLevel)
 {
 	SET_BIT(GICR,INT0);
 
@@ -71,7 +71,7 @@ STD_Return CallBack_Int0(void (*Func_Ptr)(void))
 }
 
 //Interrupt_No2
-STD_Return External_Int1(Int_Sense_Control SenseLevel)
+STD_Return External_Int1(Int_Sense_Control_t SenseLevel)
 {
 	SET_BIT(GICR,INT1);
 
@@ -100,7 +100,7 @@ STD_Return CallBack_Int1(void (*Func_Ptr)(void))
 }
 
 //Interrupt_No3
-STD_Return External_Int2(Int_Sense_Control SenseLevel)
+STD_Return External_Int2(Int_Sense_Control_t SenseLevel)
 {
 	SET_BIT(GICR,INT2);
 

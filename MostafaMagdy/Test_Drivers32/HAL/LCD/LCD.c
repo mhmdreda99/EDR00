@@ -7,9 +7,9 @@
 
 #include "LCD.h"
 #include "LCD_Config.h"
+#include <stdio.h>
 #include <util/delay.h>
-
-
+#include <stdlib.h>
 void CLCD_init(void)
 {
 	//Initialize LCD pins direction
@@ -66,13 +66,11 @@ void CLCD_SendData(u8 Data)
 	DIO_SetPinValue(CLCD_ControlPort,CLCD_E_PIN,DIO_LOW);
 }
 
-void CLCD_SendWord(const u8 *Word_PTR)
+void CLCD_SendWord(u8 *Word_PTR)
 {
-	u8 counter=0;
-	while((Word_PTR[counter])!='\0') 		//Word = String = array of charaters
+	while(*Word_PTR) 		//Word = String = array of charaters
 	{
-		CLCD_SendData(Word_PTR[counter]);
-		counter++;
+		CLCD_SendData(*Word_PTR++);
 	}
 }
 
@@ -113,3 +111,50 @@ void CLCD_SendSpecialChar(u8 *Pattern,u8 BlockNumber,u8 X_Position,u8 Y_Position
 	CLCD_SendData(BlockNumber);
 }
 
+void CLCD_Display_Decimal_Number(s32 num)
+{
+	u8 i = 0, j, digit, str[10];
+
+	/* if number 0 */
+	if (0 == num)
+	{
+		CLCD_SendData('0');
+	}
+
+	/* if the number is negative */
+	if (num < 0)
+	{
+		CLCD_SendData('-');
+
+		/* convert to positive form */
+		num = num * -1;
+	}
+
+	/* loop on digits of the number */
+	while (num > 0)
+	{
+		digit = (num % 10) + '0';
+		str[i] = digit;
+		num /= 10;
+		i++;
+	}
+
+	/* print str on LCD */
+	for (j = i; j > 0; j--)
+	{
+		CLCD_SendData(str[j - 1]);
+	}
+}
+void CLCD_Display_RealNumber(f32 num)
+{
+	//Left number to the decimal point
+	s32 left = (s32)num;
+	//calculation to the Right number to the decimal point
+	u8 right = (f32)(num - left) * 100;
+	//Display Left number to the decimal point
+	CLCD_Display_Decimal_Number(left);
+	//Display the decimal point
+	CLCD_SendData('.');
+	//Display the Right number to the decimal point
+	CLCD_Display_Decimal_Number(right);
+}

@@ -35,6 +35,7 @@
 #define SREG		*((volatile u8* const)0x5F)
 #define GIE				7 						//Global_interrupt_Enable Pin (I_BIT)
 
+//External interrupt Registers
 #define GICR		*((volatile u8* const)0x5B)
 #define INT0			6
 #define INT1			7
@@ -53,6 +54,31 @@
 
 #define MCUCSR		*((volatile u8* const)0x54)
 #define ISC2			6
+
+//ADC Registers
+#define ADMUX	(*((volatile unsigned char* const)(0x27)))
+#define REFS1	7		//ADC select reference
+#define REFS0	6		//ADC select reference
+#define ADLAR	5
+#define MUX4	4
+#define MUX3	3
+#define MUX2	2
+#define MUX1	1
+#define MUX0	0
+
+#define ADCSRA	(*((volatile unsigned char* const)(0x26)))
+#define ADEN	7		//Enable ADC
+#define ADSC	6		//Start_ADC_Conversion_Enable
+#define ADATE	5		//AutoTrigger_Enable
+#define ADIF	4		//ADC interrupt flag
+#define ADIE	3		//ADC interrupt enable
+#define ADPS2	2
+#define ADPS1	1
+#define ADPS0	0
+
+#define ADCH	(*((volatile unsigned char* const)(0x25)))		//ADC data register high
+#define ADCL	(*((volatile unsigned char* const)(0x24)))		//ADC data register low
+
 
 //Special Function I/O Register
 #define SFIOR	(*((volatile u8* const)(0x50)))
