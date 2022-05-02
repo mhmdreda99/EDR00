@@ -12,15 +12,16 @@ RM := rm -rf
 -include MCAL/External_Interrupt/subdir.mk
 -include MCAL/DIO/Debug/subdir.mk
 -include MCAL/DIO/subdir.mk
+-include MCAL/ADC/subdir.mk
 -include MCAL/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/subdir.mk
 -include MCAL/.metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
 -include MCAL/.metadata/.metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
+-include HAL/StopWatch/subdir.mk
 -include HAL/SevenSegment_Driver/.metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
 -include HAL/SevenSegment_Driver/subdir.mk
 -include HAL/LCD/subdir.mk
 -include HAL/Keypad/subdir.mk
 -include HAL/.metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
--include APP/StopWatch/subdir.mk
 -include subdir.mk
 -include objects.mk
 

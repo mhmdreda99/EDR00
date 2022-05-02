@@ -1,10 +1,58 @@
-//file guard
+/*
+ * file           BIT_MATH.h
+ * @author        MostafaMagdy
+ * @email         MostafaMagii7@gmail.com
+ * @Git account:  https:github.com/MostafaMagdy99
+ * @version       0.1
+ * @date          2022-04-26
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ */
+
+/*This is preprocessor Header file guard  */
 #ifndef BIT_MATH_H_
 #define BIT_MATH_H_
-//X is the variable number
-#define SET_BIT(X,BIT_NO)           (X|=(1<<BIT_NO))
-#define CLEAR_BIT(X,BIT_NO)         (X&=(~(1<<BIT_NO)))
-#define TOGGLE_BIT(X,BIT_NO)        (X^=(1<<BIT_NO))
-#define GET_BIT(X,BIT_NO)			((X>>BIT_NO)&1)
 
-#endif //end of file guard
+/*********************************************************/
+/* Macro for set a certian bit in a register
+ *  Input: Reg:     Register name that contain the bit
+ *         BIT_NO:  bit number that to be Set
+ *
+ */
+/*********************************************************/  
+
+#define SET_BIT(Reg,BIT_NO)           (Reg|=(1<<BIT_NO))
+
+/*********************************************************/
+/* Macro for Clear a certian bit in a register
+ *  Input: Reg:     Register name that contain the bit
+ *         BIT_NO:  bit number that to be Clear
+ *
+ */
+/*********************************************************/ 
+
+#define CLEAR_BIT(Reg,BIT_NO)         (Reg&=(~(1<<BIT_NO)))
+
+/*********************************************************/
+/* Macro for Toggle a certian bit in a register
+ *  Input: Reg:     Register name that contain the bit
+ *         BIT_NO:  bit number that to be Toggle
+ *
+ */
+/*********************************************************/ 
+
+#define TOGGLE_BIT(Reg,BIT_NO)        (Reg^=(1<<BIT_NO))
+
+/*********************************************************/
+/* Macro for Get Value a certian bit in a register
+ *  Input: Reg:     Register name that contain the bit
+ *         BIT_NO:  bit number that to be Read/Value get
+ *
+ */
+/*********************************************************/ 
+
+#define GET_BIT(Reg,BIT_NO)			((Reg & (1<<BIT_NO))?1:0)
+
+/*This is preprocessor Header file guard End  */
+#endif 

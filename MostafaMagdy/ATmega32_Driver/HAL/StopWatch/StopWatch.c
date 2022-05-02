@@ -1,13 +1,28 @@
-/*
- * StopWatch.c
- *
- *  Created on: Mar 31, 2022
- *      Author: Seko
+/**
+ * @file 		  StopWatch.c
+ * @author        MostafaMagdy
+ * @email         MostafaMagii7@gmail.com
+ * @Git account:  https:github.com/MostafaMagdy99
+ * @version       0.1
+ * @date 		  2022-04-28
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ * Description :  Source file for StopWatch
  */
 
+/******************************************Includes**************************************************/
 #include "StopWatch.h"
-
-STD_Return TimingSelection(u8 StopWatch_ControlPort,SevenSegment_Type TYPE,SevenSegment_Sel Time)
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * 
+ * @param StopWatch_ControlPort 	: takes which DIO_PORT used to control the 4 sevensegment
+ * @param TYPE 						: takes the sevensegment types CommonAnode/CommonCathode
+ * @param Time 						: take which time will activated Sec01/Sec10/Min01/Min10			
+ * @return STD_Return 
+ */
+STD_Return TimingSelection(u8 StopWatch_ControlPort,SevenSegment_Type_t TYPE,SevenSegment_Sel_t Time)
 {
 	#ifdef StopWatch_ControlPort_A
 	switch(TYPE)
@@ -276,4 +291,5 @@ STD_Return TimingSelection(u8 StopWatch_ControlPort,SevenSegment_Type TYPE,Seven
 #endif
 	return E_NOK;
 }
+/*****************************************************************************************************/
 

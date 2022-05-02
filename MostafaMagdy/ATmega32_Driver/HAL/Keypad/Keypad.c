@@ -1,23 +1,38 @@
 /*
- * keypad.c
- *
- *  Created on: Apr 16, 2022
- *      Author: Seko
+ * @file          Keypad.c
+ * @author        MostafaMagdy
+ * @email         MostafaMagii7@gmail.com
+ * @Git account:  https:github.com/MostafaMagdy99
+ * @version       0.1
+ * @date 		  2022-04-28
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ *  Description :  Source file for the Keypad
  */
+
+/******************************************Includes**************************************************/
 #include "Keypad.h"
+/****************************************KeyPad Key Index********************************************/
 
-/************* KeyPad Key Index ***************/
-/*         Col_0   Col_1   Col_2   Col_3     */
-/*	                                          */
-/* row_0      1        2       3       4      */
-/*	                                          */
-/* row_1  	  5        6       7       8      */
-/*	                                          */
-/* row_2	  9        10      11      12     */
-/*	                                          */
-/* row_3	  13       14      15      16     */
-/**********************************************/
-
+						/*         Col_0   Col_1   Col_2   Col_3     */
+						/*	                                          */
+						/* row_0      1        2       3       4      */
+						/*	                                          */
+						/* row_1  	  5        6       7       8      */
+						/*	                                          */
+						/* row_2	  9        10      11      12     */
+						/*	                                          */
+						/* row_3	  13       14      15      16     */
+					
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: u8 KeyPad_Pressed_Key(void);
+ * Description          : function to define which switch is pressed in the keypad
+ * 
+ * @return u8           : return the value of the pressed switch 
+ */
 u8 KeyPad_Pressed_Key(void)
 {
 	u8 ColumnIndex,RowIndex,PinState,PressedKey;

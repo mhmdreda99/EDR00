@@ -1,13 +1,32 @@
 /*
- * main.c
- *
- *  Created on: Mar 28, 2022
- *      Author: Seko
+ * @file 		  SevenSegment.c
+* @author         MostafaMagdy
+ * @email         MostafaMagii7@gmail.com
+ * @Git account:  https:github.com/MostafaMagdy99
+ * @version       0.1
+ * @date 		  2022-04-28
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ *  Description :  Source file for the Seven_Segment
  */
 
+/******************************************Includes**************************************************/
 #include "SevenSegment.h"
-
-STD_Return SevenSegment_Display(DIO_Ports_t PORT,SevenSegment_Type TYPE,Display_Number NUM)
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: 		STD_Return SevenSegment_Display(DIO_Ports_t PORT,SevenSegment_Type TYPE,Display_Number NUM);
+ * Description  	 	:		function state that which port is used the type pf seventsegment that used and the diplayed number 
+ * 
+ * @param PORT	 		: 		takes DIO_PORTS: DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD
+ * @param TYPE 			:	`	takes type of Sevensegment CommonCathode/ CommonAnode
+ * @param NUM 			:		takes the number that will be displayed from one to nine
+ * @return STD_Return 	 :		STD_Return for Error identification
+ * 
+ * 								return 0 mean Error is found , return 1 mean Error is not found
+ **/
+STD_Return SevenSegment_Display(DIO_Ports_t PORT,SevenSegment_Type_t TYPE,Display_Number_t NUM)
 {
 	switch(PORT)
 	{

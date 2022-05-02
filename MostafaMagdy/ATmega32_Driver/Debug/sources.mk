@@ -19,15 +19,16 @@ C_DEPS :=
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-APP/StopWatch \
 HAL/.metadata/.plugins/org.eclipse.cdt.make.core \
 HAL/Keypad \
 HAL/LCD \
 HAL/SevenSegment_Driver/.metadata/.plugins/org.eclipse.cdt.make.core \
 HAL/SevenSegment_Driver \
+HAL/StopWatch \
 MCAL/.metadata/.metadata/.plugins/org.eclipse.cdt.make.core \
 MCAL/.metadata/.plugins/org.eclipse.cdt.make.core \
 MCAL/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core \
+MCAL/ADC \
 MCAL/DIO \
 MCAL/DIO/Debug \
 MCAL/External_Interrupt/Debug \

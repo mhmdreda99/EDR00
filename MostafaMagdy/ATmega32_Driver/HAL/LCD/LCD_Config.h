@@ -13,15 +13,15 @@
 #define CLCD_8_BitMode	//8 Bit Mode
 
 //Selection of Port Used to display LCD Data/ Send Commands
-#define CLCD_DataPort	DIO_PORTA
+//#define CLCD_DataPort	DIO_PORTA
 //#define CLCD_DataPort	DIO_PORTB
-//#define CLCD_DataPort	DIO_PORTC
+#define CLCD_DataPort	DIO_PORTC
 //#define CLCD_DataPort	DIO_PORTD
 
 //Selection of Port Used to Control LCD
 //#define CLCD_ControlPort	DIO_PORTA
-//#define CLCD_ControlPort	DIO_PORTB
-#define CLCD_ControlPort	DIO_PORTC
+#define CLCD_ControlPort	DIO_PORTB
+//#define CLCD_ControlPort	DIO_PORTC
 //#define CLCD_ControlPort	DIO_PORTD
 
 //RegisterSelect pin selections

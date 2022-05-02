@@ -1,33 +1,48 @@
 /*
- * main.c
- *
- *  Created on: Mar 27, 2022
- *      Author: Seko
+ * @file 		  External_Interrupt.c
+ * @author        MostafaMagdy
+ * @email         MostafaMagii7@gmail.com
+ * @Git account:  https:github.com/MostafaMagdy99
+ * @version       0.1
+ * @date          2022-04-26
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ * Description :  Source file for the External Interrupt driver
  */
-#include "External_Interrupt.h"
 
+/***************************************Includes******************************************************/
+#include "External_Interrupt.h"
+/************************************User/External Function*******************************************/
 static void (*External_Function0)(void);
 static void (*External_Function1)(void);
 static void (*External_Function2)(void);
-
-//Interrupt Service Routine for external interrupt 1
+/****************************************ISR for INT0*************************************************/
 ISR(INT0_Vect)
 {
 	(*External_Function0)();
 }
-
-//Interrupt Service Routine for external interrupt 2
+/****************************************ISR for INT1*************************************************/
 ISR(INT1_Vect)
 {
 	(*External_Function1)();
 }
-
-//Interrupt Service Routine for external interrupt 3
+/****************************************ISR for INT2*************************************************/
 ISR(INT2_Vect)
 {
 	(*External_Function2)();
 }
-
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: 		STD_Return Enable_Global_Interrupt(Interrupt_State_t state);
+ * Description  	 	:		function to activte the Global interrupt/Enable or Disable External interrupt
+ * 
+ * @param state 		:		takes two states Enable_Interrupt/Disable_Interrupt
+ * @return STD_Return	 :		STD_Return for Error identification
+ * 
+ * 								return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return Enable_Global_Interrupt(Interrupt_State_t state)
 {
 	switch(state)
@@ -43,8 +58,17 @@ STD_Return Enable_Global_Interrupt(Interrupt_State_t state)
 		}
 	return E_NOK;
 }
-
-//Interrupt_No1
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: 		STD_Return External_Int0(Int_Sense_Control_t SenseLevel);
+ * Description  	 	:		function to activte the External interrupt _ No1 (INT0) 
+ * 
+ * @param SenseLevel 	 :		takes two states of the senslevel Raising or Falling
+ * @return STD_Return	 :		STD_Return for Error identification
+ * 
+ * 								return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return External_Int0(Int_Sense_Control_t SenseLevel)
 {
 	SET_BIT(GICR,INT0);
@@ -64,13 +88,33 @@ STD_Return External_Int0(Int_Sense_Control_t SenseLevel)
 		}
 	return E_NOK;
 }
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: 		STD_Return CallBack_Int0(void (*Func_Ptr)(void));
+ * Description  	 	:		function to Callback the function of user/External function_ No1 (INT0) 
+ * 
+ * @param Func_Ptr 	 	:  	 	function pointer that points to the External/User functions  1
+ * @return STD_Return	 :		STD_Return for Error identification
+ * 
+ * 								return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return CallBack_Int0(void (*Func_Ptr)(void))
 {
 	External_Function0=Func_Ptr;
 	return E_NOK;
 }
-
-//Interrupt_No2
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: 		STD_Return External_Int1(Int_Sense_Control_t SenseLevel);
+ * Description  	 	:		function to activte the External interrupt _ No2 (INT1) 
+ * 
+ * @param SenseLevel 	 :		takes two states of the senslevel Raising or Falling 
+ * @return STD_Return	 :		STD_Return for Error identification
+ * 
+ * 								return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return External_Int1(Int_Sense_Control_t SenseLevel)
 {
 	SET_BIT(GICR,INT1);
@@ -92,14 +136,33 @@ STD_Return External_Int1(Int_Sense_Control_t SenseLevel)
 		}
 	return E_NOK;
 }
-
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: 		STD_Return CallBack_Int1(void (*Func_Ptr)(void));
+ * Description  	 	:		function to Callback the function of user/External function_ No2 (INT1) 
+ * 
+ * @param Func_Ptr 	 	:  	 	function pointer that points to the External/User functions 2
+ * @return STD_Return	 :		STD_Return for Error identification
+ * 
+ * 								return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return CallBack_Int1(void (*Func_Ptr)(void))
 {
 	External_Function1=Func_Ptr;
 	return E_NOK;
 }
-
-//Interrupt_No3
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: 		STD_Return External_Int2(Int_Sense_Control_t SenseLevel);
+ * Description  	 	:		function to activte the External interrupt _ No3 (INT2) 
+ * 
+ * @param SenseLevel 	 :		takes two states of the senslevel Raising or Falling 
+ * @return STD_Return	 :		STD_Return for Error identification
+ * 
+ * 								return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return External_Int2(Int_Sense_Control_t SenseLevel)
 {
 	SET_BIT(GICR,INT2);
@@ -118,10 +181,21 @@ STD_Return External_Int2(Int_Sense_Control_t SenseLevel)
 				return E_OK;
 		}
 	return E_NOK;
-
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: 		STD_Return CallBack_Int2(void (*Func_Ptr)(void));
+ * Description  	 	:		function to Callback the function of user/External function_ No3 (INT2) 
+ * 
+ * @param Func_Ptr 	 	:  	 	function pointer that points to the External/User functions 3
+ * @return STD_Return	 :		STD_Return for Error identification
+ * 
+ * 								return 0 mean Error is found , return 1 mean Error is not found
+ **/
 }
 STD_Return CallBack_Int2(void (*Func_Ptr)(void))
 {
 	External_Function2=Func_Ptr;
 	return E_NOK;
 }
+/*****************************************************************************************************/

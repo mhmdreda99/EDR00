@@ -1,22 +1,27 @@
-/*
- ============================================================================
- Name        : DIO_interface.h
- Author      : Mostafa Magdy
- Layer		 : MCAL
- Target		 : ATMEGA 32
- Version     : 1.0
- Date		 : 4/3/2021
- Copyright   : This is an open source code for all embedded systems students
- Description : Header file for the DIO driver
- ============================================================================
+/**
+ * @file 		  DIO_program.c
+ * @author        MostafaMagdy
+ * @email         MostafaMagii7@gmail.com
+ * @Git account:  https:github.com/MostafaMagdy99
+ * @version       0.1
+ * @date          2022-04-26
+ * 
+ * @copyright Copyright (c) 2022
+ * 
+ * Description :  Source file for the DIO driver
  */
 
-//service files first
-
-//driver files
+/***************************************Includes******************************************************/
 #include "DIO_interface.h"
-
-
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: 		void DIO_init(void);
+ * Description  	 	:		Initialize DIO Periphiral 
+ * 
+ * @param   	void 	:  		has no input paramater
+ * @return  	void 	:		Return nothing
+ **/
 void DIO_init(void)
 {
     // initializing all pins are input
@@ -32,7 +37,19 @@ void DIO_init(void)
     //enable the internal pull up resistor
     CLEAR_BIT(SFIOR,PUD);
 }
-
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: STD_Return DIO_SetPinDirection(DIO_Ports_t PORT, u8 PIN, DIO_Direction_t Direction);
+ * Description  	 	: function for Set pin direction Input or Output
+ * 
+ * @param PORT 			: takes the four PORTS DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD
+ * @param PIN 			: takes the number of pin in the PORT
+ * @param Direction 	: takes the directon of the single PIN is DIO_INPUT or DIO_OUTPUT
+ * @return STD_Return	 :		STD_Return for Error identification
+ * 
+ * 								return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return DIO_SetPinDirection(DIO_Ports_t PORT, u8 PIN, DIO_Direction_t Direction)
 	{
 		// check for safety
@@ -102,7 +119,18 @@ STD_Return DIO_SetPinDirection(DIO_Ports_t PORT, u8 PIN, DIO_Direction_t Directi
 			}
 	return E_NOK;
 	}
-
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: STD_Return DIO_SetPortDirection(DIO_Ports_t PORT,DIO_Direction_t Direction);
+ * Description  	 	: function for Set PORT direction Input or Output
+ * 
+ * @param PORT 		    : takes the four PORTS DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD		
+ * @param Direction     : takes the direction of all pins in the port PORT_INPUT/PORT_OUTPUT
+ * @return STD_Return	 :		STD_Return for Error identification
+ * 
+ * 								return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return DIO_SetPortDirection(DIO_Ports_t PORT,DIO_Direction_t Direction)
 {
 					switch(PORT)
@@ -125,7 +153,19 @@ STD_Return DIO_SetPortDirection(DIO_Ports_t PORT,DIO_Direction_t Direction)
 						}
 	return E_NOK;
 }
-
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: STD_Return DIO_SetPinValue(DIO_Ports_t PORT,u8 PIN,DIO_State_t State);		  
+ * Description  	 	: function for Set specific Pin in a port value High or Low
+ * 
+ * @param PORT 			: takes the four PORTS DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD
+ * @param PIN 			: takes the number of pin in the PORT
+ * @param State 		: takes the Value of the single PIN is DIO_HIGH or DIO_LOW
+ * @return STD_Return	: STD_Return for Error identification
+ * 
+ * 							return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return DIO_SetPinValue(DIO_Ports_t PORT,u8 PIN,DIO_State_t State)
 	{
 		if(PIN>MAX_PinNum)
@@ -194,7 +234,18 @@ STD_Return DIO_SetPinValue(DIO_Ports_t PORT,u8 PIN,DIO_State_t State)
 			}
 		return E_NOK;
 	}
-
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: STD_Return DIO_SetPortValue(DIO_Ports_t PORT,u8 value);
+ * Description  	 	: function for Set PORT Value High or Low
+ * 
+ * @param PORT 			: takes the four PORTS DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD
+ * @param value  		: takes the value  of all pins in the port PORT_HIGH/PORT_LOW
+ * @return STD_Return	: STD_Return for Error identification
+ * 
+ * 						  return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return DIO_SetPortValue(DIO_Ports_t PORT,u8 value)
 {
 					switch(PORT)
@@ -218,7 +269,19 @@ STD_Return DIO_SetPortValue(DIO_Ports_t PORT,u8 value)
 						}
 	return E_NOK;
 }
-
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: STD_Return DIO_GetPinValue(DIO_Ports_t PORT,u8 PIN,DIO_State_t* State);  
+ * Description  	 	: function for storing the value of pin 
+ * 
+ * @param PORT 			: takes the four PORTS DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD
+ * @param PIN 		    : takes the number of pin in the PORT
+ * @param State 		: pointer of the state that takes the Value of the single PIN is DIO_HIGH or DIO_LOW
+ * @return STD_Return	: STD_Return for Error identification
+ * 
+ * 						  return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return DIO_GetPinValue(DIO_Ports_t PORT,u8 PIN,DIO_State_t* State)
 	{
 		if(PIN>MAX_PinNum)
@@ -247,7 +310,18 @@ STD_Return DIO_GetPinValue(DIO_Ports_t PORT,u8 PIN,DIO_State_t* State)
 			}
 		return E_NOK;
 	}
-
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: STD_Return DIO_togglePin(DIO_Ports_t port,u8 pin); 
+ * Description  	 	: function for toggle the current value of pin 
+ *  
+ * @param port 			: takes the four PORTS DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD
+ * @param pin 			: takes the number of pin in the PORT
+ * @return STD_Return	: STD_Return for Error identification
+ * 
+ * 						  return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return DIO_togglePin(DIO_Ports_t port,u8 pin)
  {
 	if (pin > MAX_PinNum)
@@ -277,7 +351,19 @@ STD_Return DIO_togglePin(DIO_Ports_t port,u8 pin)
 
 	return E_NOK;
 }
-
+/*****************************************************************************************************/
+/**
+ * @brief 
+ * Prototype    	 	: STD_Return DIO_EnablePullup(DIO_Ports_t port, u8 pin, DIO_PullUpState_t Pullstate); 
+ * Description  	 	: function for activting the pull up resistor 
+ * 
+ * @param port 			: takes the four PORTS DIO_PORTA,DIO_PORTB,DIO_PORTC,DIO_PORTD
+ * @param pin 			: takes the number of pin in the PORT
+ * @param Pullstate     : take the pull up state ENABLE_PullUp/DISABLE_PullUp
+ * @return STD_Return	: STD_Return for Error identification
+ * 
+ * 						  return 0 mean Error is found , return 1 mean Error is not found
+ **/
 STD_Return DIO_EnablePullup(DIO_Ports_t PORT, u8 PIN, DIO_PullUpState_t Pullstate)
 	{
 		if(PIN>MAX_PinNum)
@@ -292,10 +378,11 @@ STD_Return DIO_EnablePullup(DIO_Ports_t PORT, u8 PIN, DIO_PullUpState_t Pullstat
 						switch(Pullstate)
 							{
 								case ENABLE_PullUp:
-									CLEAR_BIT(PORTA,PIN);
+									CLEAR_BIT(DDRA,PIN);
+									SET_BIT(PORTA,PIN);
 									break;
 								case DISABLE_PullUp:
-									SET_BIT(PORTA,PIN);
+									SET_BIT(SFIOR,PUD);
 									break;
 								default:
 									return E_OK;
@@ -305,10 +392,11 @@ STD_Return DIO_EnablePullup(DIO_Ports_t PORT, u8 PIN, DIO_PullUpState_t Pullstat
 							switch(Pullstate)
 								{
 									case ENABLE_PullUp:
-										CLEAR_BIT(PORTB,PIN);
+										CLEAR_BIT(DDRB,PIN);
+										SET_BIT(PORTB,PIN);
 										break;
 									case DISABLE_PullUp:
-										SET_BIT(PORTB,PIN);
+										SET_BIT(SFIOR,PUD);
 										break;
 									default:
 										return E_OK;
@@ -318,10 +406,11 @@ STD_Return DIO_EnablePullup(DIO_Ports_t PORT, u8 PIN, DIO_PullUpState_t Pullstat
 								switch(Pullstate)
 									{
 										case ENABLE_PullUp:
-											CLEAR_BIT(PORTC,PIN);
+											CLEAR_BIT(DDRC,PIN);
+											SET_BIT(PORTC,PIN);
 											break;
 										case DISABLE_PullUp:
-											SET_BIT(PORTC,PIN);
+											SET_BIT(SFIOR,PUD);
 											break;
 										default:
 											return E_OK;
@@ -331,10 +420,11 @@ STD_Return DIO_EnablePullup(DIO_Ports_t PORT, u8 PIN, DIO_PullUpState_t Pullstat
 									switch(Pullstate)
 										{
 											case ENABLE_PullUp:
-												CLEAR_BIT(PORTD,PIN);
+												CLEAR_BIT(DDRD,PIN);
+												SET_BIT(PORTD,PIN);
 												break;
 											case DISABLE_PullUp:
-												SET_BIT(PORTD,PIN);
+												SET_BIT(SFIOR,PUD);
 												break;
 											default:
 												return E_OK;
@@ -347,5 +437,5 @@ STD_Return DIO_EnablePullup(DIO_Ports_t PORT, u8 PIN, DIO_PullUpState_t Pullstat
 			}
 		return E_NOK;
 	}
-
+/*****************************************************************************************************/
 
