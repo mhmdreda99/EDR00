@@ -12,6 +12,7 @@ RM := rm -rf
 -include MCAL/External_Interrupt/subdir.mk
 -include MCAL/DIO/Debug/subdir.mk
 -include MCAL/DIO/subdir.mk
+-include MCAL/ADC/subdir.mk
 -include MCAL/.metadata/.plugins/org.eclipse.cdt.managedbuilder.core/subdir.mk
 -include MCAL/.metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk
 -include MCAL/.metadata/.metadata/.plugins/org.eclipse.cdt.make.core/subdir.mk

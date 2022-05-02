@@ -22,8 +22,8 @@
 //#define LED_Pin6	6
 //#define LED_Pin7	7
 
-#define Switch_PORT		PORTD
-//#define Switch_PORT	PORTB
+#define Switch_PORT		DIO_PORTD
+//#define Switch_PORT	DIO_PORTB
 
 
 

@@ -26,12 +26,8 @@ void main(void)
 	while (1)
 	{
 		DIO_SetPinValue(LEDS_PORT,LED_Pin0,DIO_HIGH);
-
-		while((GET_BIT(PORTD,Switch_Pin))==0)
-		{
-			External_Int0(Rising_Edge_Sense);
-			CallBack_Int0(&SwitchFunc);
-		}
+		External_Int0(Rising_Edge_Sense);
+		CallBack_Int0(&SwitchFunc);
 	}
 
 }
