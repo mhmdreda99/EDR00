@@ -1,0 +1,48 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "STD_MACROS.h"
+#include "STD_TYPES.h"
+uint8 checkIfPrime(uint16 number);
+uint16 gprimeCount=0;
+
+int main()
+{
+    uint16 num,count;
+    uint8 check;
+    count=0;
+    num=2;
+    while (gprimeCount != 101)
+    {
+
+        check=checkIfPrime(num);
+        if (check == 1)
+        {
+            printf("Number[%d]=%d\n\n",gprimeCount,num);
+        }
+        num++;
+    }
+    printf("\nGlobal prime Counter=%d",gprimeCount);
+}
+
+uint8 checkIfPrime(uint16 number)
+{
+    uint8 primeArray[]= {2,3,5,7};
+    uint8 i;
+    for (i=0; i<5; i++)
+    {
+        if (number != primeArray[i])
+        {
+            if ((number%primeArray[i]) == 0)
+            {
+                return 0;
+            }
+        }
+        else
+        {
+            gprimeCount++;
+            return 1;
+        }
+    }
+    gprimeCount++;
+    return 1;
+}
