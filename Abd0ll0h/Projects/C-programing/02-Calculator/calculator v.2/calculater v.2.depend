@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1647197232 source:d:\c programming\avr\tasks\calculater v.2\main.c
-	<stdio.h>
-	<string.h>
-	<stdlib.h>
-	<conio.h>
-
