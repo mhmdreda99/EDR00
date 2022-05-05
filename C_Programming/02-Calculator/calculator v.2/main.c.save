@@ -1,0 +1,72 @@
+#include <stdio.h>
+
+struct SEquation
+{
+    int num;
+    char sign;
+};
+struct SEquation exp[10];
+
+
+int main()
+{
+    int i,k,j=0,l;
+    char temptext[10];
+    int flag=0;
+    int count=0;
+
+    printf("\n\n\n\t\t\t\t\t\t calculator");
+    printf("\nnotes:\n1.Numbers should be < 10 digits.");
+    printf("\n2.Only operations allowed are:+ - * /.");
+    printf("\n2.Only 5 operations allowed.");
+    printf("\n\nEnter equation:");
+
+    ///Storing Equation
+    //the storing process is continued unless number of operation is violated
+    while (j<5)
+    {
+        for (i=0; i<10; i++ )
+        {
+            //user enter the number and it'll be stored as string
+            temptext[i]=getche();
+            //the number entry process will end either by
+            //1.entering a sign(equation not finished)
+            if ((temptext[i] == '+') || (temptext[i] == '-') || (temptext[i] == '*') || (temptext[i] == '/'))
+            {
+                //the count of signs stored is less than count of numbers stored
+                if (j<4)
+                {
+                    //storing the sign
+                    exp[j].sign=temptext[i];
+                }
+                break;
+            }
+            //2.or using Enter key(at end of equation)
+            else if (temptext[i] == 13)
+            {
+                exp[j].num=atoi(temptext);
+                j++;
+                goto endEquation;
+            }
+        }
+        //storing the number after being ended by either the tow ways
+        exp[j].num=atoi(temptext);
+        j++;
+        count++;
+    }
+endEquation:
+    printf("\nj=%d",j);
+    printf("\nyour Equation=");
+    for (k=0; k<j; k++)
+    {
+        printf("%d",exp[k].num);
+        printf("%c",exp[k].sign);
+    }
+    printf("\n");
+
+    ///processing Equation
+    for (k=0; K<j-1; k++)
+    {
+        if (sign[k])
+    }
+}

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1645695167 source:d:\c programming\avr\tasks\dec to bi converter\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1651145039 source:d:\embeded\avr\workspace\c_programming\01-decimal converter\decimal converter\main.c
+	<stdio.h>
+

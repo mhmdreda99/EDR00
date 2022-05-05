@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1651614483 source:c:\users\user\downloads\test\prime_numbers\main.c
+	<stdio.h>
+	<stdlib.h>
+	"STD_MACROS.h"
+	"STD_TYPES.h"
+
+1650547721 c:\users\user\downloads\test\prime_numbers\std_macros.h
+
+1650547721 c:\users\user\downloads\test\prime_numbers\std_types.h
+

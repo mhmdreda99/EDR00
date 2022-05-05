@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1645125270 source:d:\c programming\avr\tasks\reda tasks\student record system\student record system\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
