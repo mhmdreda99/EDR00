@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1643303147 source:d:\c programming\avr\tasks\1) basic concept\2\3\main.c
-	<stdio.h>
-	<stdlib.h>
-
-1643590888 source:d:\c programming\avr\tasks\calculator\main.c
-	<stdio.h>
-
