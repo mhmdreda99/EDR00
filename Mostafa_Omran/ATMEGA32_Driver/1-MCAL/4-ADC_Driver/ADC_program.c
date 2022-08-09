@@ -170,6 +170,16 @@ u8 ADC_u8StartConversionAsynch(u8 Copy_u8Channel,u16*Copy_pu8Reading,void(*Copy_
 	return Local_u8ErrorState;
 }
 
+s32 Map(s32 Copy_s32InputMin,s32 Copy_s32InputMax,s32 Copy_s32OutputMin,s32 Copy_s32OutputMax,s32 Copy_s32InputVal)
+{
+	s32 Local_s32OutputVal;
+	Local_s32OutputVal=Copy_s32InputVal-Copy_s32InputMin;
+	Local_s32OutputVal*=Copy_s32OutputMax-Copy_s32OutputMin;
+	Local_s32OutputVal/=Copy_s32InputMax-Copy_s32InputMin;
+	Local_s32OutputVal+=Copy_s32OutputMin;
+	return Local_s32OutputVal;
+}
+
 ISR(__vector_16)
 {
 
