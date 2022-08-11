@@ -29,7 +29,7 @@ void TWI_voidMasterInit(u8 Copy_u8SlaveAddress)
 	/*Initialize the node address*/
 	if(Copy_u8SlaveAddress !=0)
 	{
-		TWAR=Copy_u8SlaveAddress<<1;
+		TWAR=Copy_u8SlaveAddress;
 	}
 
 	/*Enable TWI*/
@@ -67,6 +67,7 @@ TWI_ErrStatus TWI_SendStartCondition(void)
 	else
 	{
 		/*Do nothing*/
+
 	}
 	return Local_ErrStatus;
 }
@@ -99,16 +100,20 @@ TWI_ErrStatus TWI_SendRepeatedStart(void)
 TWI_ErrStatus TWI_SendSlaveAddressWithWrite(u8 Copy_u8SlaveAddress)
 {
 	TWI_ErrStatus Local_ErrStatus= NoError;
+	u8 Local_TWCR=0;
 
-	/*Clear the start condition bit*/
-	CLR_BIT(TWCR,TWCR_TWSTA);
+	/*Clear the start condition bit And Set The Enable And Clear interrupt flag in the local variable*/
+	CLR_BIT(Local_TWCR,TWCR_TWSTA);
+	SET_BIT(Local_TWCR,TWCR_TWEN);
+	SET_BIT(Local_TWCR,TWCR_TWINT);
+
+	CLR_BIT(Copy_u8SlaveAddress,0);		/*for write request*/
 
 	/*Set the slave address in the 7 MSB in the data register*/
-	TWDR=Copy_u8SlaveAddress<<1;
-	CLR_BIT(TWDR,0);		/*for write request*/
+	TWDR=Copy_u8SlaveAddress;
 
-	/*clear the interrupt flag to start the previous operation*/
-	SET_BIT(TWCR,TWCR_TWINT);
+	/*Passing the local variable to the TWCR to do the previous operation*/
+	TWCR=Local_TWCR;
 
 	/*waiting until the interrupt flag is raised again and the previous operation is complete*/
 	while(GET_BIT(TWCR,TWCR_TWINT)==0);
@@ -129,16 +134,19 @@ TWI_ErrStatus TWI_SendSlaveAddressWithWrite(u8 Copy_u8SlaveAddress)
 TWI_ErrStatus TWI_SendSlaveAddressWithRead(u8 Copy_u8SlaveAddress)
 {
 	TWI_ErrStatus Local_ErrStatus= NoError;
+	u8 Local_TWCR=0;
 
-	/*Clear the start condition bit*/
-	CLR_BIT(TWCR,TWCR_TWSTA);
+	/*Clear the start condition bit And Set The Enable And Clear interrupt flag in the local variable*/
+	CLR_BIT(Local_TWCR,TWCR_TWSTA);
+	SET_BIT(Local_TWCR,TWCR_TWEN);
+	SET_BIT(Local_TWCR,TWCR_TWINT);
 
 	/*Set the slave address in the 7 MSB in the data register*/
-	TWDR=Copy_u8SlaveAddress<<1;
+	TWDR=Copy_u8SlaveAddress;
 	SET_BIT(TWDR,0);		/*for read request*/
 
-	/*clear the interrupt flag to start the previous operation*/
-	SET_BIT(TWCR,TWCR_TWINT);
+	/*Passing the local variable to the TWCR to do the previous operation*/
+	TWCR=Local_TWCR;
 
 	/*waiting until the interrupt flag is raised again and the previous operation is complete*/
 	while(GET_BIT(TWCR,TWCR_TWINT)==0);
